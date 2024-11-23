@@ -9,12 +9,31 @@ namespace Code.Runtime.Gameplay.Logic
 
         [SerializeField]
         private Health _health;
+        
+        [SerializeField]
+        private Rigidbody2D _rigidbody2D;
+        
+        [SerializeField]
+        private float _forceonDeath;
+
+        [SerializeField]
+        private Collider2D _collider;
+
+        
         private IInputService _inputService;
-        
-        
+
+
         [Inject]
         private void Construct(IInputService inputService) =>
         _inputService = inputService;
+
+        private void OnValidate()
+        {
+           _health ??= GetComponent<Health>();   
+           _rigidbody2D ??= GetComponent<Rigidbody2D>();
+           _collider ??= GetComponent<Collider2D>();
+        }
+        
         private void Awake() =>
             _health.Death += onDeath;
         
@@ -25,6 +44,8 @@ namespace Code.Runtime.Gameplay.Logic
         private void onDeath()
         {
             _inputService.Disable();
+            _rigidbody2D.AddForce(Vector2.up * _forceonDeath, ForceMode2D.Impulse);
+            _collider.enabled = false;
         }
 
     }
