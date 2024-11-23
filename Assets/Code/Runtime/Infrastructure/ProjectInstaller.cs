@@ -1,4 +1,5 @@
-﻿using Code.Runtime.Infrastructure.Services.Random;
+﻿using Code.Runtime.Infrastructure.Services.Input;
+using Code.Runtime.Infrastructure.Services.Random;
 using Code.Runtime.Infrastructure.Services.Scene;
 using Zenject;
 
@@ -10,12 +11,14 @@ namespace Code.Runtime.Infrastructure
         {
             Container.Bind<IRandomService>().To<RandomService>().AsSingle();
             Container.Bind<ISceneLoader>().To<SceneLoader>().AsSingle();
+            Container.Bind<IInputService>().To<InputService>().AsSingle();
             Container.BindInterfacesAndSelfTo<ProjectInstaller>().FromInstance(this).AsSingle();
         }
 
         public void Initialize()
         {
-            Container.Resolve<ISceneLoader>().LoadScene("Level");
+            Container.Resolve<ISceneLoader>()
+                .LoadScene("Level");
         }
     }
 }
