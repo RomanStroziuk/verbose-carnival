@@ -12,9 +12,19 @@ namespace Code.Runtime.Gameplay.View.UI
         [SerializeField]
         private Health _health;
 
-        private void Update()
+        private void Awake()
+        {
+            _health.HealthChanged += OnHealthChanged;
+        }
+        
+        private void OnDestroy() =>
+        _health.HealthChanged -= OnHealthChanged;
+
+        public void OnHealthChanged()
         {
             _image.fillAmount = _health.CurrentHealth / _health.MaxHealth;
         }
+
+        
     }
 }

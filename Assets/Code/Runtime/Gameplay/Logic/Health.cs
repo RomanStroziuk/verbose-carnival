@@ -10,7 +10,9 @@ namespace Code.Runtime.Gameplay.Logic
         
         public float CurrentHealth => _currentHealth;
         
-        public float MaxHealth { get; private set; }
+        public float MaxHealth { get; private set; }  
+        
+        public event Action HealthChanged;
 
         private void Start()
         {
@@ -23,6 +25,7 @@ namespace Code.Runtime.Gameplay.Logic
                 throw new InvalidOperationException("Cannot substract to a negative health");
             }
             _currentHealth -= healthToSubstract;
+            HealthChanged?.Invoke();
 
             if (_currentHealth < 0)
             {
