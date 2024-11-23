@@ -14,13 +14,13 @@ namespace Code.Runtime.Gameplay.View.UI
 
         private void Awake()
         {
-            _health.HealthChanged += OnHealthChanged;
+            _health.Changed += OnChanged;
         }
         
         private void OnDestroy() =>
-        _health.HealthChanged -= OnHealthChanged;
+        _health.Changed -= OnChanged;
 
-        public void OnHealthChanged()
+        public void OnChanged()
         {
             _image.fillAmount = _health.CurrentHealth / _health.MaxHealth;
         }
