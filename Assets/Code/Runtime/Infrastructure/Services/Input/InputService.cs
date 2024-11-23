@@ -5,7 +5,7 @@ namespace Code.Runtime.Infrastructure.Services.Input
         
 
         private const string AxisHorizontal = "Horizontal";
-        private bool _enabled = true;
+        private bool _enabled;
 
         public void Enable()
         {

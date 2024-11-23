@@ -4,9 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91b7045e-aea4-476f-b964-c141a1179470" name="Changes" comment="collectable bug fix">
+    <list default="true" id="91b7045e-aea4-476f-b964-c141a1179470" name="Changes" comment="Player forced flying up on death implemented">
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Api.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Api/IEnterableState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Api/IEnterableState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Api/IExitableState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Api/IExitableState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Api/IState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Api/IState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Provider.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Provider/IStateProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Provider/IStateProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Provider/StateProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Provider/StateProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/BootstrapState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/BootstrapState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LevelState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LevelState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/StateMachine.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/StateMachine/GameStateMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/StateMachine/GameStateMachine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/StateMachine/IGameStateMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/StateMachine/IGameStateMachine.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Death.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Death.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/ProjectInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/ProjectInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Input/IInputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Input/IInputService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Input/InputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Input/InputService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BoostrapScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BoostrapScene.unity.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +153,7 @@
       <workItem from="1732387476977" duration="621000" />
       <workItem from="1732388136623" duration="205000" />
       <workItem from="1732388364324" duration="420000" />
-      <workItem from="1732388816558" duration="7914000" />
+      <workItem from="1732388816558" duration="12380000" />
     </task>
     <task id="LOCAL-00001" summary="space">
       <option name="closed" value="true" />
@@ -224,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732396394511</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Player forced flying up on death implemented">
+      <option name="closed" value="true" />
+      <created>1732397172866</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1732397172866</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +288,7 @@
     <MESSAGE value="health" />
     <MESSAGE value="Player input disable on death" />
     <MESSAGE value="collectable bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="collectable bug fix" />
+    <MESSAGE value="Player forced flying up on death implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Player forced flying up on death implemented" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 namespace Code.Runtime.Infrastructure.Services.Input
 {
-    internal interface IInputService
+    public interface IInputService
     {
         
         void Enable();
