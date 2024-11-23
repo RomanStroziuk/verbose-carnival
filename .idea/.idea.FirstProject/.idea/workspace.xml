@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91b7045e-aea4-476f-b964-c141a1179470" name="Changes" comment="health">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Death.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Death.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/HealthBar.cs" afterDir="false" />
+    <list default="true" id="91b7045e-aea4-476f-b964-c141a1179470" name="Changes" comment="Player input disable on death">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Collector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Collector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/ICollecteble.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/ICollecteble.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Mace.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Mace.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +128,7 @@
       <workItem from="1732387476977" duration="621000" />
       <workItem from="1732388136623" duration="205000" />
       <workItem from="1732388364324" duration="420000" />
-      <workItem from="1732388816558" duration="5966000" />
+      <workItem from="1732388816558" duration="7283000" />
     </task>
     <task id="LOCAL-00001" summary="space">
       <option name="closed" value="true" />
@@ -210,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732394736095</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Player input disable on death">
+      <option name="closed" value="true" />
+      <created>1732395089590</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732395089591</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +245,7 @@
     <MESSAGE value="Input servise extract in service." />
     <MESSAGE value="instance playmode" />
     <MESSAGE value="health" />
-    <option name="LAST_COMMIT_MESSAGE" value="health" />
+    <MESSAGE value="Player input disable on death" />
+    <option name="LAST_COMMIT_MESSAGE" value="Player input disable on death" />
   </component>
 </project>

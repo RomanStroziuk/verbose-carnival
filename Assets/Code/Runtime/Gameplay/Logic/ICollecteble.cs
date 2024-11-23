@@ -3,5 +3,7 @@
     public interface ICollecteble
     {
         void Collect(Collector collector);
+        
+        bool IsCollected { get; }
     }
 }
