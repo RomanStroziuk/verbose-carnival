@@ -11,7 +11,7 @@ namespace Code.Runtime.Gameplay.View.UI
     {
         [SerializeField]
         private const string LevelNameScene = "Level";
-        private Button _button;
+        public Button _button;
         private IGameStateMachine _gameStateMachine;
 
 

@@ -4,6 +4,7 @@ using Code.Runtime.Infrastructure.GameStates.Api;
 using Code.Runtime.Infrastructure.GameStates.StateMachine;
 using Code.Runtime.Infrastructure.Services.Scene;
 using Code.Runtime.Infrastructure.Services.StaticData;
+using Code.Runtime.StaticData;
 using UnityEngine;
 
 namespace Code.Runtime.Infrastructure.GameStates.State
@@ -13,33 +14,30 @@ namespace Code.Runtime.Infrastructure.GameStates.State
         private readonly ISceneLoader _sceneLoader;
         private readonly IGameStateMachine _stateMachine;
         private readonly IGameFactory _gameFactory;
+        private readonly IStaticDataService _staticData;
 
         public LoadLevelState(ISceneLoader sceneLoader,
             IStaticDataService staticDataService,
             IGameStateMachine gameStateMachine,
-            IGameFactory gameFactory)
+            IGameFactory gameFactory, IStaticDataService staticData)
         {
             _sceneLoader = sceneLoader;
             _stateMachine = gameStateMachine;
             _gameFactory = gameFactory;
-        } 
+            _staticData = staticData;
+        }
 
 
         public void Enter(string payload)
         {
             _sceneLoader.LoadScene(payload);
-            
-            GameObject spawnPlayer = SpawnPlayer();
+
+            LevelData levelData = _staticData.GetLevelData(payload);
+            GameObject spawnPlayer = _gameFactory.CreatePlayer(levelData.PlayerPosition);
             _gameFactory.CreateHud(spawnPlayer);
 
-            
-            _stateMachine.Enter<LevelState>();
-        }
 
-        private GameObject SpawnPlayer()
-        {
-            Vector3 playerSpawnPosition = Object.FindObjectOfType<PlayerSpawnPoint>().transform.position;
-           return _gameFactory.CreatePlayer(playerSpawnPosition);
+            _stateMachine.Enter<LevelState>();
         }
     }
 }
