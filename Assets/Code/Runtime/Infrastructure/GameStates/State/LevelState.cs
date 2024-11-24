@@ -1,5 +1,4 @@
 using Code.Runtime.Infrastructure.Services.Input;
-using Code.Runtime.Infrastructure.Services.Player;
 using Code.Runtime.Infrastructure.Services.StaticData;
 using UnityEngine;
 
@@ -10,15 +9,12 @@ namespace Code.Runtime.Infrastructure.GameStates.State
         
         private readonly IInputService _inputService;
         private readonly IStaticDataService _staticDataService;
-        private readonly IPlayerProvideService _playerProvider;
 
         public LevelState(IInputService inputService,
-            IStaticDataService staticDataService,
-            IPlayerProvideService playerProvideService)
+            IStaticDataService staticDataService)
         {
             _inputService = inputService;
             _staticDataService = staticDataService;
-            _playerProvider = playerProvideService;
         }
         public void Enter()
         {
@@ -29,7 +25,6 @@ namespace Code.Runtime.Infrastructure.GameStates.State
         public void Exit()
         {
             _inputService.Disable();
-            _playerProvider.CleanUp();
         }
         
     }

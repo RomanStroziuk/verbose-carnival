@@ -4,7 +4,6 @@ using Code.Runtime.Infrastructure.GameStates.Api;
 using Code.Runtime.Infrastructure.GameStates.State;
 using Code.Runtime.Infrastructure.GameStates.StateMachine;
 using Code.Runtime.Infrastructure.Services.Input;
-using Code.Runtime.Infrastructure.Services.Player;
 using Code.Runtime.Infrastructure.Services.Random;
 using Code.Runtime.Infrastructure.Services.Scene;
 using Code.Runtime.Infrastructure.Services.StaticData;
@@ -25,7 +24,6 @@ namespace Code.Runtime.Infrastructure
 
         private void BindFactories()
         {
-            Container.Bind<IPlayerProvideService>().To<PlayerProvideService>().AsSingle();
             
             Container.Bind<IGameFactory>().To<GameFactory>().AsSingle();
 

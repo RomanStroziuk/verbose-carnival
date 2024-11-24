@@ -5,10 +5,8 @@ namespace Code.Runtime.Gameplay.Logic
 {
     public class Health : MonoBehaviour
     {
-        [SerializeField]
-        private float _currentHealth;
-        
-        public float CurrentHealth => _currentHealth;
+
+        public float CurrentHealth;
         
         public float MaxHealth { get; private set; }  
         
@@ -18,7 +16,7 @@ namespace Code.Runtime.Gameplay.Logic
 
         private void Start()
         {
-            MaxHealth = _currentHealth;
+            MaxHealth = CurrentHealth;
         }
         public void Substract(float healthToSubstract)
         {
@@ -26,12 +24,12 @@ namespace Code.Runtime.Gameplay.Logic
             {
                 throw new InvalidOperationException("Cannot substract to a negative health");
             }
-            _currentHealth -= healthToSubstract;
+            CurrentHealth -= healthToSubstract;
             Changed?.Invoke();
 
-            if (_currentHealth <= 0)
+            if (CurrentHealth <= 0)
             {
-                _currentHealth = 0;
+                CurrentHealth = 0;
                 Death?.Invoke();
             }
         }

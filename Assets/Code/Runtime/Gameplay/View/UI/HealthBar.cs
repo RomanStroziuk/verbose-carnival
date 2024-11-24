@@ -1,5 +1,4 @@
 ﻿using Code.Runtime.Gameplay.Logic;
-using Code.Runtime.Infrastructure.Services.Player;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -14,10 +13,6 @@ namespace Code.Runtime.Gameplay.View.UI
         private Health _health;
         
         
-        private void Awake()
-        {
-            _health.Changed += OnChanged;
-        }
         
         private void OnDestroy() =>
             _health.Changed -= OnChanged;
@@ -30,6 +25,7 @@ namespace Code.Runtime.Gameplay.View.UI
         public void SetUp(Health health)
         {
             _health = health;
+            _health.Changed += OnChanged;
         }
 
         

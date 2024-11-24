@@ -1,5 +1,4 @@
 using Code.Runtime.Gameplay.Logic;
-using Code.Runtime.Infrastructure.Services.Player;
 using TMPro;
 using UnityEngine;
 using Zenject;
