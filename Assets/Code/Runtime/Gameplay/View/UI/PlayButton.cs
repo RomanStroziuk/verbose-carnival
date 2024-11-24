@@ -10,6 +10,7 @@ namespace Code.Runtime.Gameplay.View.UI
     public class PlayButton : MonoBehaviour
     {
         [SerializeField]
+        private const string LevelNameScene = "Level";
         private Button _button;
         private IGameStateMachine _gameStateMachine;
 
@@ -29,7 +30,7 @@ namespace Code.Runtime.Gameplay.View.UI
 
         private void OnButtonClicked()
         {
-            _gameStateMachine.Enter<LoadLevelState, string>("Level");
+            _gameStateMachine.Enter<LoadLevelState, string>(LevelNameScene);
         }
     }
 }

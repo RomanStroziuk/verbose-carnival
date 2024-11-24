@@ -34,6 +34,7 @@ namespace Code.Runtime.Infrastructure
         {
             Container.Bind<IStateProvider>().To<StateProvider>().AsSingle();
             Container.Bind<IGameStateMachine>().To<GameStateMachine>().AsSingle();
+            Container.BindInterfacesAndSelfTo<BootstrapState>().AsSingle();
             Container.BindInterfacesAndSelfTo<MenuState>().AsSingle();
             Container.BindInterfacesAndSelfTo<LoadLevelState>().AsSingle();
             Container.BindInterfacesAndSelfTo<LevelState>().AsSingle();

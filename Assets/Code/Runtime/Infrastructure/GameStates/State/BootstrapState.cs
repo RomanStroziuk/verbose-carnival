@@ -6,8 +6,7 @@ namespace Code.Runtime.Infrastructure.GameStates.State
 {
     public sealed class BootstrapState : IEnterableState
     {
-        
-        private const string LevelName = "Level";
+            
         private const string BootstrapSceneName = "BootstrapScene";
 
         private readonly IGameStateMachine _stateMachine;
@@ -18,6 +17,7 @@ namespace Code.Runtime.Infrastructure.GameStates.State
         public BootstrapState(IGameStateMachine stateMachine, ISceneLoader sceneLoader, IStaticDataService staticDataService)
         {
             _stateMachine = stateMachine;
+            _sceneLoader = sceneLoader;
             _staticDataService = staticDataService;
         }
         public void Enter()
