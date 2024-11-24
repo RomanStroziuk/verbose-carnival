@@ -16,11 +16,13 @@ namespace Code.Runtime.Gameplay.Logic
         [SerializeField] private float _randomDeltaX = 2;
 
         private IRandomService _randomService;
+        private IInstantiator _instantiator;
         public float RandomDeltaX => _randomDeltaX;
 
         [Inject]
-        private void Construct(IRandomService randomService)
+        private void Construct(IRandomService randomService, IInstantiator instantiator)
         {
+            _instantiator = instantiator;
             _randomService = randomService;
         }
         
@@ -35,7 +37,7 @@ namespace Code.Runtime.Gameplay.Logic
 
         private void SpawnEnemy()
         {
-            Instantiate(_collectable, transform.position.SetX(GetRandomX()), Quaternion.identity, gameObject.transform);
+            _instantiator.InstantiatePrefab(_collectable, transform.position.SetX(GetRandomX()), Quaternion.identity, gameObject.transform);
         }
 
         private float GetRandomX()

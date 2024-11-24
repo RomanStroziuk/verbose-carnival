@@ -1,10 +1,9 @@
 using UnityEngine;
 
-namespace Code.Runtime.Gameplay.Logic
+namespace Code.Runtime.Gameplay.Service.Wallet
 {
-    public sealed class Wallet : MonoBehaviour
+    public sealed class WalletService : IWalletService
     {
-        [SerializeField]
         private int balance;
 
         

@@ -1,4 +1,5 @@
-﻿using Code.Runtime.Infrastructure.Factories;
+﻿using Code.Runtime.Gameplay.Service.Wallet;
+using Code.Runtime.Infrastructure.Factories;
 using Code.Runtime.Infrastructure.GameStates;
 using Code.Runtime.Infrastructure.GameStates.Api;
 using Code.Runtime.Infrastructure.GameStates.State;
@@ -18,9 +19,12 @@ namespace Code.Runtime.Infrastructure
            BindInfrastructureServices();
            BindGameStates();
            BindFactories();
-            
+           BindGameplayServices();
             Container.BindInterfacesAndSelfTo<ProjectInstaller>().FromInstance(this).AsSingle();
         }
+
+        private void BindGameplayServices() => 
+            Container.Bind<IWalletService>().To<WalletService>().AsSingle();
 
         private void BindFactories()
         {

@@ -29,10 +29,9 @@ namespace Code.Runtime.Infrastructure.Factories
 
         public GameObject CreateHud(GameObject player)
         {
-            Wallet wallet = player.GetComponent<Wallet>();
             Health health = player.GetComponent<Health>();
             Hud hud = _instantiator.InstantiatePrefabForComponent<Hud>(_staticDataService.HUDConfig.hudPrefab);
-                hud.SetUp(wallet, health);
+                hud.SetUp(health);
                 return hud.gameObject;
         }
     }

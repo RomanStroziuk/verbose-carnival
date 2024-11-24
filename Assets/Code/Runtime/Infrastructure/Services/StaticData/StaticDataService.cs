@@ -21,7 +21,7 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
 
         private void LoadLevels()
         {
-            _levelsData = Resources.LoadAll<LevelData>("Configs/Levels").ToDictionary(level => level.name);
+            _levelsData = Resources.LoadAll<LevelData>("Configs/Levels").ToDictionary(level => level.LevelName);
         }
 
         private PlayerConfig LoadPlayerConfig() =>
