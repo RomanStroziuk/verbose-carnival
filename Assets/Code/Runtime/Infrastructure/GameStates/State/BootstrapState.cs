@@ -18,7 +18,6 @@ namespace Code.Runtime.Infrastructure.GameStates.State
         public BootstrapState(IGameStateMachine stateMachine, ISceneLoader sceneLoader, IStaticDataService staticDataService)
         {
             _stateMachine = stateMachine;
-            _sceneLoader = sceneLoader;
             _staticDataService = staticDataService;
         }
         public void Enter()
@@ -26,7 +25,7 @@ namespace Code.Runtime.Infrastructure.GameStates.State
             _sceneLoader.LoadScene(BootstrapSceneName);
             _staticDataService.LoadAll();
                 
-            _stateMachine.Enter<LoadLevelState, string>("Level");
+            _stateMachine.Enter<MenuState>();
 
         }
         
