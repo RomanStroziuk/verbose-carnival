@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91b7045e-aea4-476f-b964-c141a1179470" name="Changes" comment="jugit">
+    <list default="true" id="91b7045e-aea4-476f-b964-c141a1179470" name="Changes" comment="Game factory introduced">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Hud.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Hud.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/HudConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/HudConfig.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/PlayerConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Configs/PlayerConfig.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Health.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/CoinView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/CoinView.cs" afterDir="false" />
@@ -46,6 +55,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/roman/GameDev/FirstGameOnUnity/src/FirstProject/Assets/Code/Runtime/Gameplay/View/UI/CoinView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/roman/GameDev/FirstGameOnUnity/src/FirstProject/Assets/Scenes/Level.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -139,7 +149,7 @@
       <workItem from="1732388136623" duration="205000" />
       <workItem from="1732388364324" duration="420000" />
       <workItem from="1732388816558" duration="14759000" />
-      <workItem from="1732437001929" duration="14798000" />
+      <workItem from="1732437001929" duration="15167000" />
     </task>
     <task id="LOCAL-00001" summary="space">
       <option name="closed" value="true" />
@@ -285,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732453476151</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Game factory introduced">
+      <option name="closed" value="true" />
+      <created>1732455377822</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1732455377823</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +338,7 @@
     <MESSAGE value="Files" />
     <MESSAGE value="text" />
     <MESSAGE value="jugit" />
-    <option name="LAST_COMMIT_MESSAGE" value="jugit" />
+    <MESSAGE value="Game factory introduced" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game factory introduced" />
   </component>
 </project>
