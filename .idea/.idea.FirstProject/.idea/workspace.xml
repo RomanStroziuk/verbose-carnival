@@ -4,8 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91b7045e-aea4-476f-b964-c141a1179470" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
+    <list default="true" id="91b7045e-aea4-476f-b964-c141a1179470" name="Changes" comment="text">
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Markers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Markers/PlayerSpawnPoint.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Markers/PlayerSpawnPoint.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Hud.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Hud.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Factories.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Factories/GameFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Factories/GameFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Api/IPlayloadedEnterableState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Api/IPlayloadedEnterableState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LoadLevelState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LoadLevelState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Player.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Player/IPlayerProvideService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Player/IPlayerProvideService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Player/PlayerProvideService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Player/PlayerProvideService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/IStaticDataService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/IStaticDataService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/StaticDataService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/StaticDataService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/StaticData.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/StaticData/HudConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/StaticData/HudConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/StaticData/PlayerConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/StaticData/PlayerConfig.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/CoinView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/CoinView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/HealthBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Provider/IStateProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Provider/IStateProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Provider/StateProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/Provider/StateProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/BootstrapState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/BootstrapState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LevelState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/StateMachine/GameStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/StateMachine/GameStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/StateMachine/IGameStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/StateMachine/IGameStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/ProjectInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/ProjectInstaller.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,14 +63,14 @@
     &quot;assignee&quot;: &quot;RomanStroziuk&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/RomanStroziuk/verbose-carnival.git",
-    "accountId": "fcb89835-d0c9-4996-8979-08eec561479e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RomanStroziuk/verbose-carnival.git&quot;,
+    &quot;accountId&quot;: &quot;fcb89835-d0c9-4996-8979-08eec561479e&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/roman/GameDev/FirstGameOnUnity/src/FirstProject/Assets/Code/Runtime/Extensions/Vector3Extensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/roman/GameDev/FirstGameOnUnity/src/FirstProject/Assets/Scenes/Level.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -48,20 +84,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.42f1\Editor\Unity.exe" />
@@ -126,6 +163,7 @@
       <workItem from="1732388136623" duration="205000" />
       <workItem from="1732388364324" duration="420000" />
       <workItem from="1732388816558" duration="14759000" />
+      <workItem from="1732437001929" duration="13051000" />
     </task>
     <task id="LOCAL-00001" summary="space">
       <option name="closed" value="true" />
@@ -255,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732403815587</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="text">
+      <option name="closed" value="true" />
+      <created>1732437122736</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1732437122736</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +334,7 @@
     <MESSAGE value="Game state machine implemented" />
     <MESSAGE value="final commit" />
     <MESSAGE value="Files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Files" />
+    <MESSAGE value="text" />
+    <option name="LAST_COMMIT_MESSAGE" value="text" />
   </component>
 </project>

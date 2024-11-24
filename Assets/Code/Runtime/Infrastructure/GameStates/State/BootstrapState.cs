@@ -1,4 +1,6 @@
+using Code.Runtime.Infrastructure.GameStates.StateMachine;
 using Code.Runtime.Infrastructure.Services.Scene;
+using Code.Runtime.Infrastructure.Services.StaticData;
 
 namespace Code.Runtime.Infrastructure.GameStates.State
 {
@@ -10,22 +12,21 @@ namespace Code.Runtime.Infrastructure.GameStates.State
 
         private readonly IGameStateMachine _stateMachine;
         private readonly ISceneLoader _sceneLoader;
+        private readonly IStaticDataService _staticDataService;
 
 
-        public BootstrapState(IGameStateMachine stateMachine, ISceneLoader sceneLoader)
+        public BootstrapState(IGameStateMachine stateMachine, ISceneLoader sceneLoader, IStaticDataService staticDataService)
         {
             _stateMachine = stateMachine;
             _sceneLoader = sceneLoader;
+            _staticDataService = staticDataService;
         }
         public void Enter()
         {
             _sceneLoader.LoadScene(BootstrapSceneName);
-            
-                //initialize
+            _staticDataService.LoadAll();
                 
-                
-            _sceneLoader.LoadScene(LevelName);
-            _stateMachine.Enter<LevelState>();
+            _stateMachine.Enter<LoadLevelState, string>("Level");
 
         }
         
