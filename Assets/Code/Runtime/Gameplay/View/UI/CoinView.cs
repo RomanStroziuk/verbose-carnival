@@ -1,4 +1,3 @@
-using Code.Runtime.Gameplay.Logic;
 using Code.Runtime.Gameplay.Service.Wallet;
 using TMPro;
 using UnityEngine;
