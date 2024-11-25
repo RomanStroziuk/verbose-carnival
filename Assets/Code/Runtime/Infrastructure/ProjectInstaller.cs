@@ -4,9 +4,11 @@ using Code.Runtime.Infrastructure.GameStates;
 using Code.Runtime.Infrastructure.GameStates.Api;
 using Code.Runtime.Infrastructure.GameStates.State;
 using Code.Runtime.Infrastructure.GameStates.StateMachine;
+using Code.Runtime.Infrastructure.SaveLoadRegistry;
 using Code.Runtime.Infrastructure.Services.Input;
 using Code.Runtime.Infrastructure.Services.Progress;
 using Code.Runtime.Infrastructure.Services.Random;
+using Code.Runtime.Infrastructure.Services.SaveLoad;
 using Code.Runtime.Infrastructure.Services.Scene;
 using Code.Runtime.Infrastructure.Services.StaticData;
 using Zenject;
@@ -40,6 +42,7 @@ namespace Code.Runtime.Infrastructure
             Container.Bind<IStateProvider>().To<StateProvider>().AsSingle();
             Container.Bind<IGameStateMachine>().To<GameStateMachine>().AsSingle();
             Container.BindInterfacesAndSelfTo<BootstrapState>().AsSingle();
+            Container.BindInterfacesAndSelfTo<LoadProgressState>().AsSingle();
             Container.BindInterfacesAndSelfTo<MenuState>().AsSingle();
             Container.BindInterfacesAndSelfTo<LoadLevelState>().AsSingle();
             Container.BindInterfacesAndSelfTo<LevelState>().AsSingle();
@@ -55,6 +58,10 @@ namespace Code.Runtime.Infrastructure
             Container.Bind<IInputService>().To<InputService>().AsSingle();
             Container.Bind<IStaticDataService>().To<StaticDataService>().AsSingle();
             Container.Bind<IProgressService>().To<ProgressService>().AsSingle();
+            Container.Bind<ISaveLoadService>().To<SaveLoadService>().AsSingle();
+            Container.Bind<ISaveLoadRegistryService>().To<SaveLoadRegistryService>().AsSingle();
+
+
 
         }
 
