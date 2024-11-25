@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f8fe593-6016-4ed7-9ef9-37e91a2e9e6a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hud.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hud.prefab.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="655959b3-fea3-48f3-ae70-b4ec4ca88c85" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +13,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "FantaSnow"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/RomanStroziuk/verbose-carnival.git",
+    "accountId": "c71a463b-db63-4c1e-b366-40ef37869afc"
+  }
+}]]></component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
 }]]></component>
-  <component name="ProjectId" id="2pLaHjGcBQAmdcxLHJuJRJe4S5E" />
+  <component name="ProjectId" id="2pLaHjj7gqgyGAjsNxO14pQIgFZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -79,18 +91,60 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4f8fe593-6016-4ed7-9ef9-37e91a2e9e6a" name="Changes" comment="" />
-      <created>1732547740209</created>
+      <changelist id="655959b3-fea3-48f3-ae70-b4ec4ca88c85" name="Changes" comment="" />
+      <created>1732547739676</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1732547740209</updated>
-      <workItem from="1732547746130" duration="568000" />
+      <updated>1732547739676</updated>
+      <workItem from="1732547746400" duration="8512000" />
     </task>
+    <task id="LOCAL-00001" summary="Add coins view in main menu.">
+      <option name="closed" value="true" />
+      <created>1732548946686</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732548946686</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Progress services implemented.">
+      <option name="closed" value="true" />
+      <created>1732549868496</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732549868496</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Save/load infrastructure implemented; save on each coin collected implemented.">
+      <option name="closed" value="true" />
+      <created>1732555166917</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732555166917</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Player prefs editor imported.">
+      <option name="closed" value="true" />
+      <created>1732555704904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732555704904</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Mega design from dim4ik (from Zelene (&lt;- eto moe selo esli 4o))">
+      <option name="closed" value="true" />
+      <created>1732557004827</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732557004827</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
     <option name="hasUnityReference" value="true" />
@@ -101,5 +155,11 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add coins view in main menu." />
+    <MESSAGE value="Progress services implemented." />
+    <MESSAGE value="Save/load infrastructure implemented; save on each coin collected implemented." />
+    <MESSAGE value="Player prefs editor imported." />
+    <MESSAGE value="Mega design from dim4ik (from Zelene (&lt;- eto moe selo esli 4o))" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

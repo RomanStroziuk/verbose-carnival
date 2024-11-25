@@ -558,7 +558,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 60.004784
+  orthographic size: 6.8135614
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -840,6 +840,26 @@ PrefabInstance:
     - target: {fileID: 2809815257763538069, guid: 88aa604da3d6e5d4b8c9de8b23475752, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -3.5211182
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224776592989584457, guid: 88aa604da3d6e5d4b8c9de8b23475752, type: 3}
+      propertyPath: m_fontSize
+      value: 118.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224776592989584457, guid: 88aa604da3d6e5d4b8c9de8b23475752, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.18039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224776592989584457, guid: 88aa604da3d6e5d4b8c9de8b23475752, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.75294125
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224776592989584457, guid: 88aa604da3d6e5d4b8c9de8b23475752, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.9921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224776592989584457, guid: 88aa604da3d6e5d4b8c9de8b23475752, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281254141
       objectReference: {fileID: 0}
     - target: {fileID: 8972267724089428152, guid: 88aa604da3d6e5d4b8c9de8b23475752, type: 3}
       propertyPath: m_Name
