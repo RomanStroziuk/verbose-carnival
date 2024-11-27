@@ -10,6 +10,7 @@ using Code.Runtime.Infrastructure.Services.Progress;
 using Code.Runtime.Infrastructure.Services.Random;
 using Code.Runtime.Infrastructure.Services.SaveLoad;
 using Code.Runtime.Infrastructure.Services.Scene;
+using Code.Runtime.Infrastructure.Services.Shop;
 using Code.Runtime.Infrastructure.Services.StaticData;
 using Zenject;
 
@@ -26,8 +27,13 @@ namespace Code.Runtime.Infrastructure
             Container.BindInterfacesAndSelfTo<ProjectInstaller>().FromInstance(this).AsSingle();
         }
 
-        private void BindGameplayServices() => 
+        private void BindGameplayServices()
+        {   
             Container.Bind<IWalletService>().To<WalletService>().AsSingle();
+            Container.Bind<IShopService>().To<ShopService>().AsSingle();
+        }
+        
+
 
         private void BindFactories()
         {

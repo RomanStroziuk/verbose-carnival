@@ -12,7 +12,8 @@ namespace Code.Runtime.Gameplay.View.UI.Shop
     {
         
         [SerializeField] private ShopItem _shopItemPrefab;
-
+        
+        private readonly List<ShopItem> _shopItems = new();
         private IStaticDataService _staticDataService;
         private IInstantiator _instantiator;
 
@@ -29,11 +30,30 @@ namespace Code.Runtime.Gameplay.View.UI.Shop
         private void Start()
         {
             IEnumerable<HatConfig> hatsConfigs = _staticDataService.GetHatsConfigs();
-            foreach (HatConfig hatConfig in hatsConfigs)
+            foreach (HatConfig config in hatsConfigs)
             {
                ShopItem  shopItem = _instantiator.InstantiatePrefabForComponent<ShopItem>(_shopItemPrefab, _contentContainer);
-               shopItem.UpdateView(hatConfig.Sprite, hatConfig.Name, hatConfig.Price);
+               _shopItems.Add(shopItem);
+               shopItem.Bought += onBought;
+               shopItem.UpdateView(config.Sprite, config.Name, config.Price, config.HatTypeId);
+
             }
         }
+        
+        private void onBought() =>
+            UpdateShopItemsView();
+
+        private void UpdateShopItemsView()
+        {
+            foreach (ShopItem shopItem in _shopItems)
+            {
+                HatConfig config = _staticDataService.GetHatConfig(shopItem.HatType);
+                shopItem.UpdateView(config.Sprite, config.Name, config.Price, config.HatTypeId);
+
+            }
+
+        }
+
+        
     }
 }

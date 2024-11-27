@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Code.Runtime.Data
 {
@@ -6,5 +7,6 @@ namespace Code.Runtime.Data
     public sealed class PlayerProgress
     {
         public int Coins;
+        public List<HatTypeId> OwnedHats = new();
     }
 }
