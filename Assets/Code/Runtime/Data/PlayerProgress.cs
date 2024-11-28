@@ -12,6 +12,7 @@ namespace Code.Runtime.Data
         [FormerlySerializedAs("OwnedHats")] 
         public List<ShopItemId> PruchasedItems = new();
 
-        public List<HatTypeId> OwnedHats;
+        public List<HatTypeId> OwnedHats = new();
+        public HatTypeId SelectedHat = HatTypeId.None;
     }
 }

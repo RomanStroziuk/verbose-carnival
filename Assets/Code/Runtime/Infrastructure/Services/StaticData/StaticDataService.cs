@@ -15,12 +15,15 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
         public PlayerConfig PlayerConfig { get; private set; }
         private Dictionary<string, LevelData> _levelsData;
         private Dictionary<ShopItemId, ShopItemConfig> _shopItems;
+        private Dictionary<HatTypeId, HatConfig> _hats;
+
         public void LoadAll()
         {
             LoadPlayerConfig();
             LoadHudConfig();
             LoadLevels();
             LoadShopItems();
+            LoadHatConfigs();
         }
 
         public ShopItemConfig GetShopItemConfig(ShopItemId hatTypeId) =>
@@ -36,7 +39,11 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
             _shopItems = Resources
                 .LoadAll<ShopItemConfig>(path: "Configs/ShopItems")
                 .ToDictionary(x => x.ShopItemId );
-        
+
+        private void LoadHatConfigs()
+        {
+            _hats = Resources.LoadAll<HatConfig>("Configs/Hats").ToDictionary(x=>x.HatTypeId);
+        }
         private void LoadLevels()
         {
             _levelsData = Resources.LoadAll<LevelData>("Configs/Levels").ToDictionary(level => level.LevelName);

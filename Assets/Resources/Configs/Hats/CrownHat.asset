@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb672f34903e4e668a7e8955907cd238, type: 3}
+  m_Name: CrownHat
+  m_EditorClassIdentifier: 
+  Name: 
+  Sprite: {fileID: 0}
+  Price: 0
+  ShopItemId: 0
+  HatTypeId: 0
