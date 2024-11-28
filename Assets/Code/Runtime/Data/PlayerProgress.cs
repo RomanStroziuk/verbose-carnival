@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using Code.Runtime.Gameplay.View.UI.Shop;
+using UnityEngine.Serialization;
 
 namespace Code.Runtime.Data
 {
@@ -7,6 +9,7 @@ namespace Code.Runtime.Data
     public sealed class PlayerProgress
     {
         public int Coins;
-        public List<HatTypeId> OwnedHats = new();
+        [FormerlySerializedAs("OwnedHats")] 
+        public List<ShopItemId> PruchasedItems = new();
     }
 }

@@ -29,13 +29,13 @@ namespace Code.Runtime.Gameplay.View.UI.Shop
 
         private void Start()
         {
-            IEnumerable<HatConfig> hatsConfigs = _staticDataService.GetHatsConfigs();
-            foreach (HatConfig config in hatsConfigs)
+            IEnumerable<ShopItemConfig> hatsConfigs = _staticDataService.GetHatsConfigs();
+            foreach (ShopItemConfig config in hatsConfigs)
             {
                ShopItem  shopItem = _instantiator.InstantiatePrefabForComponent<ShopItem>(_shopItemPrefab, _contentContainer);
                _shopItems.Add(shopItem);
                shopItem.Bought += onBought;
-               shopItem.UpdateView(config.Sprite, config.Name, config.Price, config.HatTypeId);
+               shopItem.UpdateView(config.Sprite, config.Name, config.Price, config.ShopItemId);
 
             }
         }
@@ -47,8 +47,8 @@ namespace Code.Runtime.Gameplay.View.UI.Shop
         {
             foreach (ShopItem shopItem in _shopItems)
             {
-                HatConfig config = _staticDataService.GetHatConfig(shopItem.HatType);
-                shopItem.UpdateView(config.Sprite, config.Name, config.Price, config.HatTypeId);
+                ShopItemConfig config = _staticDataService.GetShopItemConfig(shopItem.ShopTypeId);
+                shopItem.UpdateView(config.Sprite, config.Name, config.Price, config.ShopItemId);
 
             }
 

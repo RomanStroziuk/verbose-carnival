@@ -32,28 +32,28 @@ namespace Code.Runtime.Gameplay.View.UI.Shop
             _buyButton.onClick.RemoveAllListeners();
 
         private IShopService _shopService;
-        private HatTypeId _hatType;
+        private ShopItemId _shopTypeId;
         public event Action Bought; 
 
-        public HatTypeId HatType => _hatType;
+        public ShopItemId ShopTypeId => _shopTypeId;
 
         [Inject]
         private void Construct(IShopService shopService) =>
             _shopService = shopService;
         
-        public void UpdateView(Sprite sprite, string name, int price, HatTypeId hatType)
+        public void UpdateView(Sprite sprite, string name, int price, ShopItemId hatType)
         {
             _Image.sprite = sprite;
             _name.text = name;
             _price.text = price.ToString();
-            _hatType = hatType;
+            _shopTypeId = hatType;
 
-            _buyButton.interactable = _shopService.CanBuyItem(_hatType);
+            _buyButton.interactable = _shopService.CanBuyItem(_shopTypeId);
         }
 
         private void Buy()
         {
-            _shopService.BuyItem(_hatType);
+            _shopService.BuyItem(_shopTypeId);
             Bought?.Invoke();
         }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using Code.Runtime.Data;
+using Code.Runtime.Gameplay.View.UI.Shop;
 using Code.Runtime.StaticData;
 using UnityEngine;
 
@@ -13,7 +14,7 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
         public HudConfig HUDConfig { get; set; }
         public PlayerConfig PlayerConfig { get; private set; }
         private Dictionary<string, LevelData> _levelsData;
-        private Dictionary<HatTypeId, HatConfig> _shopItems;
+        private Dictionary<ShopItemId, ShopItemConfig> _shopItems;
         public void LoadAll()
         {
             LoadPlayerConfig();
@@ -22,10 +23,10 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
             LoadShopItems();
         }
 
-        public HatConfig GetHatConfig(HatTypeId hatTypeId) =>
+        public ShopItemConfig GetShopItemConfig(ShopItemId hatTypeId) =>
             _shopItems.GetValueOrDefault(hatTypeId);
         
-        public IEnumerable<HatConfig> GetHatsConfigs() =>
+        public IEnumerable<ShopItemConfig> GetHatsConfigs() =>
             _shopItems.Values;
         
     
@@ -33,8 +34,8 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
 
         private void LoadShopItems() =>
             _shopItems = Resources
-                .LoadAll<HatConfig>(path: "Configs/ShopItems")
-                .ToDictionary(x => x.HatTypeId );
+                .LoadAll<ShopItemConfig>(path: "Configs/ShopItems")
+                .ToDictionary(x => x.ShopItemId );
         
         private void LoadLevels()
         {
