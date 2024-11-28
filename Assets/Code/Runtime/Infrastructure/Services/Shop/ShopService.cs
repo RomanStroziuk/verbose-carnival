@@ -4,6 +4,7 @@ using Code.Runtime.Data;
 using Code.Runtime.Gameplay.Service.Wallet;
 using Code.Runtime.Gameplay.View.UI.Shop;
 using Code.Runtime.Infrastructure.SaveLoad;
+using Code.Runtime.Infrastructure.Services.PlayerInventory;
 using Code.Runtime.Infrastructure.Services.SaveLoad;
 using Code.Runtime.Infrastructure.Services.StaticData;
 using Code.Runtime.StaticData;
@@ -17,11 +18,14 @@ namespace Code.Runtime.Infrastructure.Services.Shop
         private IStaticDataService _staticDataService;
         private IWalletService _walletService;
         private ISaveLoadService _saveLoadService;
-        public ShopService(IStaticDataService staticDataService, IWalletService walletService, ISaveLoadService saveLoadService)
+        private IPlayerInventoryService _inventoryService;
+
+        public ShopService(IStaticDataService staticDataService, IWalletService walletService, ISaveLoadService saveLoadService, IPlayerInventoryService inventoryService)
         {
             _staticDataService = staticDataService;
             _walletService = walletService;
             _saveLoadService = saveLoadService;
+            _inventoryService = inventoryService;
         }
         
         public bool CanBuyItem(ShopItemId hatType)
@@ -36,8 +40,15 @@ namespace Code.Runtime.Infrastructure.Services.Shop
                 throw new InvalidOperationException("Cannot buy item");
             
             _purchasedItems.Add(hatType);
-            _walletService.Purchase(_staticDataService.GetShopItemConfig(hatType).Price);
+            ShopItemConfig config = _staticDataService.GetShopItemConfig(hatType);
+            _walletService.Purchase(config.Price);
+           
+            if (config.HatTypeId != HatTypeId.None)
+                _inventoryService.AddHat(config.HatTypeId);
+            
             _saveLoadService.SavePrograss();
+
+
         }
 
 

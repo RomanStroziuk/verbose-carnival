@@ -11,5 +11,7 @@ namespace Code.Runtime.Data
         public int Coins;
         [FormerlySerializedAs("OwnedHats")] 
         public List<ShopItemId> PruchasedItems = new();
+
+        public List<HatTypeId> OwnedHats;
     }
 }
