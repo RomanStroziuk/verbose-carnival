@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6080350376320529746}
   - component: {fileID: 8210731778201324019}
   - component: {fileID: 3746833022379091095}
+  - component: {fileID: -8756491021549967762}
   m_Layer: 7
   m_Name: Coin
   m_TagString: Untagged
@@ -136,7 +137,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &6080350376320529746
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -207,3 +208,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 552b1ac9121a4f94a99918a0ac68e095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveFaderDestroy: {fileID: -8756491021549967762}
+  _rigidbody2D: {fileID: 5771011348444580150}
+  _collider2D: {fileID: 6080350376320529746}
+--- !u!114 &-8756491021549967762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015378559501830745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feed6e2033674c8e9fcb808708e2c5bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteRenderer: {fileID: 6403565356710745283}
+  _duration: 1
+  _moveDeltaY: -1
