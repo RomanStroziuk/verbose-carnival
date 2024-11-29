@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4a10d5039a54c5bb553e29bbaa9972b, type: 3}
   m_Name: CrownHat
   m_EditorClassIdentifier: 
-  HatTypeId: 2
+  HatTypeId: 3
   Sprite: {fileID: 21300000, guid: 3105ecce0ff9acc4ca416fd2d8175900, type: 3}

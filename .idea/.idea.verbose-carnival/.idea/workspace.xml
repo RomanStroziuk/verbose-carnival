@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="655959b3-fea3-48f3-ae70-b4ec4ca88c85" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/Hat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/Hat.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/PlayerHatChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/PlayerHatChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/PlayerInventory/IPlayerInventoryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/PlayerInventory/IPlayerInventoryService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/PlayerInventory/PlayerInventoryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/PlayerInventory/PlayerInventoryService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/IStaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/IStaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/StaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/StaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/ArmyHat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/ArmyHat.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/ArmyHat.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/ArmyHat.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Factories/GameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Factories/GameFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/CrownHat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/CrownHat.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/CrownHat.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/CrownHat.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/MedicalHat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/MedicalHat.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/MedicalHat.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/MedicalHat.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +25,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;parsl3y&quot;
+  }
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -38,10 +39,20 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RomanStroziuk/verbose-carnival.git&quot;,
+    &quot;accountId&quot;: &quot;ba5fbaae-fd19-425a-b1af-fca2b46af134&quot;
+  }
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="SWEA" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2pLaHjj7gqgyGAjsNxO14pQIgFZ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,17 +61,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Discover.Launch.Via.Unity" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity 2022.3.42f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\Hub\Editor\2022.3.42f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\UnityRomaFinal\verbose-carnival -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\UnityRomaFinal\verbose-carnival" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -68,7 +82,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity 2022.3.42f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\Hub\Editor\2022.3.42f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\UnityRomaFinal\verbose-carnival -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\UnityRomaFinal\verbose-carnival" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -112,6 +126,9 @@
       <workItem from="1732734537097" duration="7439000" />
       <workItem from="1732795431672" duration="10633000" />
       <workItem from="1732907109208" duration="3443000" />
+      <workItem from="1732911188454" duration="48000" />
+      <workItem from="1732916586745" duration="661000" />
+      <workItem from="1732917958959" duration="2036000" />
     </task>
     <task id="LOCAL-00001" summary="Add coins view in main menu.">
       <option name="closed" value="true" />
@@ -209,9 +226,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add coins view in main menu." />
     <MESSAGE value="Progress services implemented." />
