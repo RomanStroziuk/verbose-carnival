@@ -30,5 +30,16 @@ namespace Code.Runtime.Infrastructure.Services.PlayerInventory
             playerProgress.OwnedHats = _hats;
             playerProgress.SelectedHat = SelectedHat;
         }
+
+        public void SelectNextHat()
+        {
+            int findIndex = _hats.FindIndex(x => x == SelectedHat);
+
+            if (findIndex < _hats.Count - 1)
+                SelectedHat = _hats[findIndex + 1];
+            else
+                SelectedHat = HatTypeId.None;
+        }
+        
     }
 }

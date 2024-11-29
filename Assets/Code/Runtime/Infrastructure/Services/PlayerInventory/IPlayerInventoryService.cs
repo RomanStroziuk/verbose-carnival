@@ -9,5 +9,6 @@ namespace Code.Runtime.Infrastructure.Services.PlayerInventory
 
         bool HasEnyHat { get; }
         HatTypeId SelectedHat { get; }
+        void SelectNextHat();
     }
 }

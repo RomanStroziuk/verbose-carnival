@@ -26,6 +26,9 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
             LoadHatConfigs();
         }
 
+        public HatConfig GetHatConfig(HatTypeId hatTypeId) =>
+            _hats.GetValueOrDefault(hatTypeId);
+
         public ShopItemConfig GetShopItemConfig(ShopItemId hatTypeId) =>
             _shopItems.GetValueOrDefault(hatTypeId);
         

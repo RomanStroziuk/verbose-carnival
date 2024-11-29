@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _button: {fileID: 121311684}
+  _hatimage: {fileID: 1800193475}
 --- !u!114 &121311684
 MonoBehaviour:
   m_ObjectHideFlags: 0

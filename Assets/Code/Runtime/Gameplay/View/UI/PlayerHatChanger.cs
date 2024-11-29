@@ -42,7 +42,9 @@ namespace Code.Runtime.Gameplay.View.UI
         {
             if(!_inventoryService.HasEnyHat)
                 return;
-            
+
+            _inventoryService.SelectNextHat();
+            UpdateView();
         }
 
         private void UpdateView()
@@ -52,8 +54,9 @@ namespace Code.Runtime.Gameplay.View.UI
             
             if(selectedHat == HatTypeId.None)
                 return;
-            _staticDataService.GetHatsConfigs(selectedHat)
-            
+            HatConfig hatConfig = _staticDataService.GetHatConfig(selectedHat);
+            _hatimage.sprite = hatConfig.Sprite;
+
 
 
         }

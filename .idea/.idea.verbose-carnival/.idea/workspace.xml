@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="655959b3-fea3-48f3-ae70-b4ec4ca88c85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/StaticData/HatConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/StaticData/HatConfig.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Data/PlayerProgress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Data/PlayerProgress.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/PlayerHatChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/PlayerHatChanger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/PlayerInventory/IPlayerInventoryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/PlayerInventory/IPlayerInventoryService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/PlayerInventory/PlayerInventoryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/PlayerInventory/PlayerInventoryService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/IStaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/IStaticDataService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/StaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/StaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/StaticData/ShopItemConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/StaticData/ShopItemConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/ArmyHat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/ArmyHat.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/ArmyHat.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/ArmyHat.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/CrownHat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/CrownHat.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/CrownHat.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/CrownHat.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/MedicalHat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/MedicalHat.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/MedicalHat.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Hats/MedicalHat.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +110,8 @@
       <workItem from="1732662214540" duration="103000" />
       <workItem from="1732662729195" duration="5909000" />
       <workItem from="1732734537097" duration="7439000" />
-      <workItem from="1732795431672" duration="10465000" />
+      <workItem from="1732795431672" duration="10633000" />
+      <workItem from="1732907109208" duration="3443000" />
     </task>
     <task id="LOCAL-00001" summary="Add coins view in main menu.">
       <option name="closed" value="true" />
