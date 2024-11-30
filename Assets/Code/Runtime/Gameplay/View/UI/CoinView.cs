@@ -1,4 +1,5 @@
 using Code.Runtime.Gameplay.Service.Wallet;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using Zenject;
@@ -11,8 +12,10 @@ namespace Code.Runtime.Gameplay.View.UI
         [SerializeField] 
         private TextMeshProUGUI _coinText;
         
-        
+        [SerializeField]
+        private PunchAnimator _punchAnimator;
         private IWalletService _wallet;
+        private int _lastVelue;
 
         [Inject]
         private void Construct(IWalletService wallet)
@@ -21,8 +24,12 @@ namespace Code.Runtime.Gameplay.View.UI
         }
         private void Update()
         {
-            _coinText.text = _wallet.Balance.ToString();
+            int newVelue = _wallet.Balance;
+                if(_lastVelue != newVelue )
+                    _punchAnimator.Animate();
+                    
+            _coinText.text = newVelue.ToString();
+                _lastVelue = newVelue;
         }
-
     }
 }
