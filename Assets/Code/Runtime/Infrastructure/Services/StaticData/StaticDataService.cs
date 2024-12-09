@@ -16,6 +16,7 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
         private Dictionary<string, LevelData> _levelsData;
         private Dictionary<ShopItemId, ShopItemConfig> _shopItems;
         private Dictionary<HatTypeId, HatConfig> _hats;
+        private Dictionary<JumpTypeId, JumpConfig> _jumps;
 
         public void LoadAll()
         {
@@ -24,15 +25,18 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
             LoadLevels();
             LoadShopItems();
             LoadHatConfigs();
+            LoadJumpConfigs();
         }
 
         public HatConfig GetHatConfig(HatTypeId hatTypeId) =>
             _hats.GetValueOrDefault(hatTypeId);
+        public JumpConfig GetJumpConfig(JumpTypeId jumpTypeId) =>
+            _jumps.GetValueOrDefault(jumpTypeId);
 
         public ShopItemConfig GetShopItemConfig(ShopItemId hatTypeId) =>
             _shopItems.GetValueOrDefault(hatTypeId);
         
-        public IEnumerable<ShopItemConfig> GetHatsConfigs() =>
+        public IEnumerable<ShopItemConfig> GetItemsConfigs() =>
             _shopItems.Values;
         
     
@@ -46,6 +50,10 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
         private void LoadHatConfigs()
         {
             _hats = Resources.LoadAll<HatConfig>("Configs/Hats").ToDictionary(x=>x.HatTypeId);
+        }
+        private void LoadJumpConfigs()
+        {
+            _jumps = Resources.LoadAll<JumpConfig>("Configs/Jumps").ToDictionary(x=>x.JumpTypeId);
         }
         private void LoadLevels()
         {

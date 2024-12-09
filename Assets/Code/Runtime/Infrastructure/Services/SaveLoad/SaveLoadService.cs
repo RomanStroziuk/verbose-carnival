@@ -20,7 +20,7 @@ namespace Code.Runtime.Infrastructure.Services.SaveLoad
             _saveLoadRegistry = saveLoadRegistry;
         }
         
-        public void SavePrograss()
+        public void SaveProgress()
         {
             foreach (IWriteProgress progressWrite in _saveLoadRegistry.ProgressWriter)
             {

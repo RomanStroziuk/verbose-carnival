@@ -34,7 +34,7 @@ namespace Code.Runtime.Gameplay.Logic
         public void Collect(Collector collector)
         {
             _walletService.AddCoin();
-            _saveLoadService.SavePrograss();
+            _saveLoadService.SaveProgress();
             IsCollected = true;
             
             Destroy(_rigidbody2D);

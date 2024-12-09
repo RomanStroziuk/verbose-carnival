@@ -14,5 +14,7 @@ namespace Code.Runtime.StaticData
 
         public ShopItemId ShopItemId;
         public HatTypeId HatTypeId;
+        public JumpTypeId JumpTypeId;
     }
+
 }
