@@ -8,5 +8,6 @@ namespace Code.Runtime.StaticData
     {
         public JumpTypeId JumpTypeId;
         public Sprite Sprite;
+        public int JumpAmount; // jump amount
     }
 }   

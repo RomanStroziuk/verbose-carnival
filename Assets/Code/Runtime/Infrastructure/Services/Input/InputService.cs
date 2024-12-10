@@ -23,6 +23,6 @@ namespace Code.Runtime.Infrastructure.Services.Input
 
         public bool IsJumping() =>
             _enabled
-                ? UnityEngine.Input.GetButtonDown(JumpButton) : false;
+                && UnityEngine.Input.GetButtonDown(JumpButton);
     }
 }

@@ -7,10 +7,10 @@ namespace Code.Runtime.Gameplay.Logic
 {
     public class PlayerInputY : MonoBehaviour
     {
-        [SerializeField] private Jumper _jumper;
+        [SerializeField] private MoverY _moverY;
 
         private IInputService _inputService;
-        private JumpTypeId _currentJumpType = JumpTypeId.None;
+        private int _currentJumpType = 0;
 
         [Inject]
         private void Construct(IInputService inputService)
@@ -20,10 +20,16 @@ namespace Code.Runtime.Gameplay.Logic
 
         private void Update()
         {
-            if (_inputService.IsJumping())
+            if (_inputService.IsJumping()) 
             {
-                _jumper.TryJump();
+                _moverY.TryJump(); 
             }
+        }
+
+        public void SetJumpType(int jumpAmount)
+        {
+            _currentJumpType = jumpAmount;
+            _moverY.SetJumpType(jumpAmount); 
         }
     }
 }

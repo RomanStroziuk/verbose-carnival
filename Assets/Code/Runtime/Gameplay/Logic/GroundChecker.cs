@@ -7,19 +7,14 @@ namespace Code.Runtime.Gameplay.Logic
         [SerializeField] private Transform _groundCheck;
         [SerializeField] private LayerMask _groundLayer;
         [SerializeField] private float _groundCheckRadius = 0.2f;
+        [SerializeField] private float _groundRayLength = 1f; 
+
+        private bool _isGrounded;
 
         public bool IsGrounded()
         {
-            return Physics2D.Raycast(_groundCheck.position, Vector2.down, _groundCheckRadius, _groundLayer);
-        }
-
-        private void OnDrawGizmosSelected()
-        {
-            if (_groundCheck != null)
-            {
-                Gizmos.color = Color.green;
-                Gizmos.DrawLine(_groundCheck.position, _groundCheck.position + Vector3.down * _groundCheckRadius);
-            }
+            RaycastHit2D hit = Physics2D.Raycast(_groundCheck.position, Vector2.down, _groundRayLength, _groundLayer);
+            return hit;
         }
     }
 }
