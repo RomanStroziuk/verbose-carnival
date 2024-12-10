@@ -7,15 +7,12 @@ namespace Code.Runtime.Gameplay.Logic
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (!other.gameObject.TryGetComponent(out ICollecteble collecteble))
-            return;
-            
-            if (collecteble.IsCollected)
-            return;
+                return;
 
-          
+            if (collecteble.IsCollected)
+                return;
+
             collecteble.Collect(this);
         }
-
-        
     }
 }

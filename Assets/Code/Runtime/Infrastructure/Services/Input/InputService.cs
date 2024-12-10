@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace Code.Runtime.Infrastructure.Services.Input
 {
     public class InputService : IInputService
@@ -17,9 +19,7 @@ namespace Code.Runtime.Infrastructure.Services.Input
         }
 
         public float GetMovement() =>
-            _enabled
-                ? UnityEngine.Input.GetAxis(AxisHorizontal)
-                : 0;
+            _enabled ? UnityEngine.Input.GetAxis("Horizontal") : 0;
 
         public bool IsJumping() =>
             _enabled

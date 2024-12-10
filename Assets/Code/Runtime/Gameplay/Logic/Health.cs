@@ -5,19 +5,17 @@ namespace Code.Runtime.Gameplay.Logic
 {
     public class Health : MonoBehaviour
     {
-
         public float CurrentHealth;
-        
-        public float MaxHealth { get; private set; }  
-        
-        public event Action Changed;
+        public float MaxHealth { get; private set; }
 
+        public event Action Changed;
         public event Action Death;
 
         private void Start()
         {
             MaxHealth = CurrentHealth;
         }
+
         public void Substract(float healthToSubstract)
         {
             if (healthToSubstract < 0)
@@ -32,6 +30,23 @@ namespace Code.Runtime.Gameplay.Logic
                 CurrentHealth = 0;
                 Death?.Invoke();
             }
+        }
+
+        public void AddHealth(float healthToAdd)
+        {
+            if (healthToAdd < 0)
+            {
+                throw new InvalidOperationException("Cannot add negative health");
+            }
+
+            CurrentHealth += healthToAdd;
+
+            if (CurrentHealth > MaxHealth)
+            {
+                CurrentHealth = MaxHealth;
+            }
+
+            Changed?.Invoke();
         }
     }
 }

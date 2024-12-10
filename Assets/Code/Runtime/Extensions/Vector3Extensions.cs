@@ -1,6 +1,4 @@
-﻿
-
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Code.Runtime.Extensions
 {
@@ -15,22 +13,5 @@ namespace Code.Runtime.Extensions
         {
             return vector3.SetX(vector3.x + x);
         }
-        
-        
-        
-        
-        
-        
-        
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }

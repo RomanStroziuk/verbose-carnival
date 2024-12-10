@@ -3,9 +3,8 @@ using Code.Runtime.StaticData;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-namespace Code.Runtime.Editor
+namespace Code.Editor
 {
     [CustomEditor(typeof(LevelData))] 
     internal sealed class LevelStaticDataEditor: UnityEditor.Editor

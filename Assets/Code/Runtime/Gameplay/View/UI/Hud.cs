@@ -1,6 +1,4 @@
 using Code.Runtime.Gameplay.Logic;
-using Code.Runtime.Gameplay.Service.Wallet;
-using TMPro;
 using UnityEngine;
 
 namespace Code.Runtime.Gameplay.View.UI
@@ -12,7 +10,6 @@ namespace Code.Runtime.Gameplay.View.UI
         
         [SerializeField]
         private HealthBar _healthBar;
-
         
         public void SetUp( Health health)
         {
