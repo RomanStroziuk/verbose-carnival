@@ -6,5 +6,7 @@ namespace Code.Runtime.Gameplay.View.UI.Shop
         MedicalHat = 1,
         ArmyHat = 2,
         CrowHat = 3,
+        SingleJump = 4,
+        DoubleJump = 5
     }
 }

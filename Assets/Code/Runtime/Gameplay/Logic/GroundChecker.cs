@@ -5,22 +5,16 @@ namespace Code.Runtime.Gameplay.Logic
     public class GroundChecker : MonoBehaviour
     {
         [SerializeField] private Transform _groundCheck;
-        [SerializeField] private float _groundCheckRadius = 0.2f;
         [SerializeField] private LayerMask _groundLayer;
-        [SerializeField] private Jumper _jumper;
+        [SerializeField] private float _groundCheckRadius = 0.2f;
+        [SerializeField] private float _groundRayLength = 1f; 
 
-        private void Update()
-        {
-            if (IsGrounded())
-            {
-                _jumper.ResetJumps();  // Скидаємо стрибки при приземленні
-            }
-        }
+        private bool _isGrounded;
 
-        private bool IsGrounded()
+        public bool IsGrounded()
         {
-            // Перевіряємо, чи персонаж торкається землі
-            return Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundLayer);
+            RaycastHit2D hit = Physics2D.Raycast(_groundCheck.position, Vector2.down, _groundRayLength, _groundLayer);
+            return hit;
         }
     }
 }

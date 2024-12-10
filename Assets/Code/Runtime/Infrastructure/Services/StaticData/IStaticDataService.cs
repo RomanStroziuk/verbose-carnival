@@ -14,7 +14,8 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
         
         void LoadAll();
         ShopItemConfig GetShopItemConfig(ShopItemId hatTypeId);
-        IEnumerable<ShopItemConfig> GetHatsConfigs();
+        IEnumerable<ShopItemConfig> GetItemsConfigs();
         HatConfig GetHatConfig(HatTypeId hatTypeId);
+        JumpConfig GetJumpConfig(JumpTypeId jumpTypeId);
     }
 }

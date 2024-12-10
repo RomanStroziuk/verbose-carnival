@@ -7,7 +7,7 @@ namespace Code.Runtime.Gameplay.View
     public class MoveView : MonoBehaviour
     {
         [SerializeField] private MoverX _moverX;
-
+    
         private void Update()
         {
             float sign = Mathf.Sign(_moverX.Speed);

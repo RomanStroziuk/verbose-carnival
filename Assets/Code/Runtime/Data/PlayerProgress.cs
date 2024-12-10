@@ -9,10 +9,12 @@ namespace Code.Runtime.Data
     public sealed class PlayerProgress
     {
         public int Coins;
-        [FormerlySerializedAs("OwnedHats")] 
+        [FormerlySerializedAs("OwnedItems")] 
         public List<ShopItemId> PruchasedItems = new();
 
         public List<HatTypeId> OwnedHats = new();
+        public List<JumpTypeId> OwnedJumps = new();
         public HatTypeId SelectedHat = HatTypeId.None;
+        public JumpTypeId SelectedJump = JumpTypeId.None;
     }
 }
