@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using Code.Runtime.Data;
 using Code.Runtime.Gameplay.Service.Wallet;
 using Code.Runtime.Gameplay.View.UI.Shop;
-using Code.Runtime.Infrastructure.SaveLoad;
 using Code.Runtime.Infrastructure.Services.PlayerInventory;
 using Code.Runtime.Infrastructure.Services.SaveLoad;
 using Code.Runtime.Infrastructure.Services.StaticData;
 using Code.Runtime.StaticData;
-using Unity.VisualScripting;
 
 namespace Code.Runtime.Infrastructure.Services.Shop
 {
@@ -57,12 +55,10 @@ namespace Code.Runtime.Infrastructure.Services.Shop
 
             _saveLoadService.SaveProgress();
         }
-
-
+        
         public void Read(PlayerProgress playerProgress) =>
             _purchasedItems = playerProgress.PruchasedItems;
-
-
+        
         public void Write(PlayerProgress playerProgress) =>
             playerProgress.PruchasedItems = _purchasedItems;
     }

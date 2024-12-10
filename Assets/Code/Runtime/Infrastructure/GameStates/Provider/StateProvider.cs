@@ -1,6 +1,7 @@
+using Code.Runtime.Infrastructure.GameStates.Api;
 using Zenject;
 
-namespace Code.Runtime.Infrastructure.GameStates
+namespace Code.Runtime.Infrastructure.GameStates.Provider
 {
     public class StateProvider : IStateProvider
     {

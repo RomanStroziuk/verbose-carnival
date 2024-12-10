@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using Code.Runtime.Data;
-using Code.Runtime.Infrastructure.SaveLoad;
-using Unity.VisualScripting;
 
 namespace Code.Runtime.Infrastructure.Services.PlayerInventory
 {
@@ -22,16 +20,12 @@ namespace Code.Runtime.Infrastructure.Services.PlayerInventory
         public void AddJumpType(JumpTypeId jumpTypeId) =>
             _jumpTypeId.Add(jumpTypeId);
 
-
-
-
         public void Read(PlayerProgress playerProgress)
         {
             _hats = playerProgress.OwnedHats;
             _jumpTypeId = playerProgress.OwnedJumps;
             SelectedHat = playerProgress.SelectedHat;
             SelectedJump = playerProgress.SelectedJump;
-
         }
 
         public void Write(PlayerProgress playerProgress)

@@ -38,7 +38,6 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
         
         public IEnumerable<ShopItemConfig> GetItemsConfigs() =>
             _shopItems.Values;
-        
     
         public LevelData GetLevelData(string levelName) => _levelsData[levelName];
 

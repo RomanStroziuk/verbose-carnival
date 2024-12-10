@@ -175,5 +175,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 348896e6f0d84f5dbce4261c39f8b302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minCoinAmountToRemove: 5
-  _maxCoinAmountToRemove: 20
+  _minCoinAmountToRemove: 1
+  _maxCoinAmountToRemove: 5

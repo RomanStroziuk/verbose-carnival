@@ -11,7 +11,6 @@ namespace Code.Runtime.Infrastructure.GameStates.State
 {
     public sealed class BootstrapState : IEnterableState
     {
-            
         private const string BootstrapSceneName = "BootstrapScene";
 
         private readonly IGameStateMachine _stateMachine;
@@ -21,10 +20,11 @@ namespace Code.Runtime.Infrastructure.GameStates.State
         private readonly ISaveLoadRegistryService _saveLoadRegistryService;
         private readonly IShopService _shopService;
         private readonly IPlayerInventoryService _playerInventoryService;
-
-
-        public BootstrapState(IGameStateMachine stateMachine, ISceneLoader sceneLoader, IStaticDataService staticDataService, 
-            IWalletService walletService, ISaveLoadRegistryService saveLoadRegistryService, IShopService shopService, IPlayerInventoryService playerInventoryService)
+        
+        public BootstrapState(IGameStateMachine stateMachine, ISceneLoader sceneLoader,
+            IStaticDataService staticDataService,
+            IWalletService walletService, ISaveLoadRegistryService saveLoadRegistryService, IShopService shopService,
+            IPlayerInventoryService playerInventoryService)
         {
             _stateMachine = stateMachine;
             _sceneLoader = sceneLoader;
@@ -34,15 +34,15 @@ namespace Code.Runtime.Infrastructure.GameStates.State
             _shopService = shopService;
             _playerInventoryService = playerInventoryService;
         }
+
         public void Enter()
         {
             _sceneLoader.LoadScene(BootstrapSceneName);
             _staticDataService.LoadAll();
-                
+
             RegisterProgressReadersWriters();
 
             _stateMachine.Enter<LoadProgressState>();
-
         }
 
         private void RegisterProgressReadersWriters()

@@ -1,6 +1,6 @@
 ﻿using Code.Runtime.Gameplay.Service.Wallet;
 using Code.Runtime.Infrastructure.Factories;
-using Code.Runtime.Infrastructure.GameStates;
+using Code.Runtime.Infrastructure.GameStates.Provider;
 using Code.Runtime.Infrastructure.GameStates.State;
 using Code.Runtime.Infrastructure.GameStates.StateMachine;
 using Code.Runtime.Infrastructure.SaveLoadRegistry;
@@ -33,8 +33,7 @@ namespace Code.Runtime.Infrastructure
             Container.Bind<IShopService>().To<ShopService>().AsSingle();
             Container.Bind<IPlayerInventoryService>().To<PlayerInventoryService>().AsSingle();
         }
-
-
+        
         private void BindFactories()
         {
             Container.Bind<IGameFactory>().To<GameFactory>().AsSingle();
