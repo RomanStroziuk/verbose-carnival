@@ -8,14 +8,14 @@ using Zenject;
 
 namespace Code.Runtime.Infrastructure.Factories
 {
-     internal sealed class GameFactory : IGameFactory
-     {
+    internal sealed class GameFactory : IGameFactory
+    {
         private readonly IStaticDataService _staticDataService;
         private readonly IInstantiator _instantiator;
         private readonly IPlayerInventoryService _playerInventoryService;
-
-
-        public GameFactory(IStaticDataService staticDataService, IInstantiator instantiator, IPlayerInventoryService playerInventoryService)
+        
+        public GameFactory(IStaticDataService staticDataService, IInstantiator instantiator,
+            IPlayerInventoryService playerInventoryService)
         {
             _staticDataService = staticDataService;
             _instantiator = instantiator;
@@ -24,21 +24,22 @@ namespace Code.Runtime.Infrastructure.Factories
 
         public GameObject CreatePlayer(Vector3 position)
         {
-           GameObject player = _instantiator.InstantiatePrefab(_staticDataService.PlayerConfig.playerPrefab, position, Quaternion.identity, null);
-           
-           player.GetComponent<Health>().CurrentHealth = _staticDataService.PlayerConfig.StartHealth;
+            GameObject player = _instantiator.InstantiatePrefab(_staticDataService.PlayerConfig.playerPrefab, position,
+                Quaternion.identity, null);
 
-           player.GetComponentInChildren<Hat>().SetHat(_playerInventoryService.SelectedHat);
-               
-           return player;
+            player.GetComponent<Health>().CurrentHealth = _staticDataService.PlayerConfig.StartHealth;
+
+            player.GetComponentInChildren<Hat>().SetHat(_playerInventoryService.SelectedHat);
+
+            return player;
         }
 
         public GameObject CreateHud(GameObject player)
         {
             Health health = player.GetComponent<Health>();
             Hud hud = _instantiator.InstantiatePrefabForComponent<Hud>(_staticDataService.HUDConfig.hudPrefab);
-                hud.SetUp(health);
-                return hud.gameObject;
+            hud.SetUp(health);
+            return hud.gameObject;
         }
     }
 }

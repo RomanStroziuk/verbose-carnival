@@ -46,7 +46,7 @@ namespace Code.Runtime.Infrastructure.Services.Shop
             if (config.HatTypeId != HatTypeId.None)
                 _inventoryService.AddHat(config.HatTypeId);
             
-            _saveLoadService.SavePrograss();
+            _saveLoadService.SaveProgress();
 
 
         }

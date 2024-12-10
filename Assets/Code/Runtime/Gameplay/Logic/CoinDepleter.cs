@@ -1,21 +1,16 @@
-using System.ComponentModel;
-using Code.Runtime.Gameplay.Service.Wallet;
-using Code.Runtime.Gameplay.View;
-using Code.Runtime.Infrastructure.Services.SaveLoad;
 using UnityEngine;
-using UnityEngine.Serialization;
+using Code.Runtime.Gameplay.Service.Wallet;
+using Code.Runtime.Infrastructure.Services.SaveLoad;
 using Zenject;
 
 namespace Code.Runtime.Gameplay.Logic
 {
-    public class Coin : MonoBehaviour, ICollecteble
+    public class CoinDepleter : MonoBehaviour, ICollecteble
     {
-        [FormerlySerializedAs("moveFader")] [FormerlySerializedAs("_moveFadeDestroyer")] [SerializeField]
-        private MoveFaderDestroy moveFaderDestroy;
-
-        [SerializeField] private Rigidbody2D _rigidbody2D;
-
-        [SerializeField] private Collider2D _collider2D;
+        [SerializeField]
+        private int _minCoinAmountToRemove = 5; 
+        [SerializeField]
+        private int _maxCoinAmountToRemove = 20;
 
         private IWalletService _walletService;
         private ISaveLoadService _saveLoadService;
@@ -25,19 +20,18 @@ namespace Code.Runtime.Gameplay.Logic
         [Inject]
         private void Construct(IWalletService walletService, ISaveLoadService saveLoadService)
         {
-            _saveLoadService = saveLoadService;
             _walletService = walletService;
+            _saveLoadService = saveLoadService;
         }
 
         public void Collect(Collector collector)
         {
-            _walletService.AddCoin();
+            int coinsToRemove = Random.Range(_minCoinAmountToRemove, _maxCoinAmountToRemove + 1);
+            _walletService.RemoveCoins(coinsToRemove);
             _saveLoadService.SaveProgress();
             IsCollected = true;
 
-            Destroy(_rigidbody2D);
-            _collider2D.enabled = false;
-            moveFaderDestroy.Destroy();
+            Destroy(gameObject);
         }
     }
 }

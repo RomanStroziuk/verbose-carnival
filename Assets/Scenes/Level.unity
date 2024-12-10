@@ -175,6 +175,8 @@ MonoBehaviour:
   _collectables:
   - {fileID: 9015378559501830745, guid: b06b285e4b76aea43a7a16e51bdc3aa5, type: 3}
   - {fileID: 1060732654390995167, guid: 4962b1402b5a8f44586f9dae18a6ed45, type: 3}
+  - {fileID: 7028337589926629230, guid: ef2261ce03b7ba84caf9864a76a3c153, type: 3}
+  - {fileID: 7246321368763967505, guid: dd5d310fb065c9e49abf6beaacf4d16e, type: 3}
   _randomDeltaX: 2
 --- !u!1001 &174818961
 PrefabInstance:

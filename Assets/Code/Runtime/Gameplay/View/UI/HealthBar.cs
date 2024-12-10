@@ -1,7 +1,6 @@
 ﻿using Code.Runtime.Gameplay.Logic;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
 
 namespace Code.Runtime.Gameplay.View.UI
 {
@@ -11,8 +10,6 @@ namespace Code.Runtime.Gameplay.View.UI
         private Image _image;
         
         private Health _health;
-        
-        
         
         private void OnDestroy() =>
             _health.Changed -= OnChanged;
@@ -27,7 +24,5 @@ namespace Code.Runtime.Gameplay.View.UI
             _health = health;
             _health.Changed += OnChanged;
         }
-
-        
     }
 }
