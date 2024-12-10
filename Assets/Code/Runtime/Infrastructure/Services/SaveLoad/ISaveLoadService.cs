@@ -5,7 +5,7 @@ namespace Code.Runtime.Infrastructure.Services.SaveLoad
 {
     internal interface ISaveLoadService
     {
-        void SavePrograss();
+        void SaveProgress();
         PlayerProgress LoadProgress();
     }
 }

@@ -29,6 +29,8 @@ namespace Code.Runtime.Infrastructure.Factories
            player.GetComponent<Health>().CurrentHealth = _staticDataService.PlayerConfig.StartHealth;
 
            player.GetComponentInChildren<Hat>().SetHat(_playerInventoryService.SelectedHat);
+           Debug.Log("Choosen jump amount" + (int)_playerInventoryService.SelectedJump);
+           player.GetComponentInChildren<PlayerInputY>().SetJumpType((int)_playerInventoryService.SelectedJump);
                
            return player;
         }

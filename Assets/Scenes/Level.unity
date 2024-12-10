@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc72171737874f66a3a1cfecc901e8f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnInterval: 0.7
+  _spawnInterval: 100
   _collectables:
   - {fileID: 9015378559501830745, guid: b06b285e4b76aea43a7a16e51bdc3aa5, type: 3}
   - {fileID: 1060732654390995167, guid: 4962b1402b5a8f44586f9dae18a6ed45, type: 3}
