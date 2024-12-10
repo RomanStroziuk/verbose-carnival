@@ -5,11 +5,12 @@ using Zenject;
 
 namespace Code.Runtime.Gameplay.Logic
 {
-    public class PlayerInputX : MonoBehaviour
+    public class PlayerInputY : MonoBehaviour
     {
-        [SerializeField] private MoverX _mover;
-        
+        [SerializeField] private Jumper _jumper;
+
         private IInputService _inputService;
+        private JumpTypeId _currentJumpType = JumpTypeId.None;
 
         [Inject]
         private void Construct(IInputService inputService)
@@ -19,8 +20,10 @@ namespace Code.Runtime.Gameplay.Logic
 
         private void Update()
         {
-            float movement = _inputService.GetMovement();
-            _mover.Move(movement);
+            if (_inputService.IsJumping())
+            {
+                _jumper.TryJump();
+            }
         }
     }
 }

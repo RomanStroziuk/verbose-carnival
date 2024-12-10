@@ -113,6 +113,9 @@ GameObject:
   - component: {fileID: 5090050010306784326}
   - component: {fileID: 2446362117232833194}
   - component: {fileID: 6335908699281759694}
+  - component: {fileID: 707326202242842595}
+  - component: {fileID: 1215306697310243773}
+  - component: {fileID: 5623522283073203136}
   - component: {fileID: 13699673697389211}
   - component: {fileID: 6937092469057800600}
   - component: {fileID: 3265569099575785384}
@@ -295,13 +298,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 700f069eb3e94d0a968a8de1ff15fd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _moverY: {fileID: 1215306697310243773}
+  _groundChecker: {fileID: 5623522283073203136}
+  MaxJump: 2
+--- !u!114 &707326202242842595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8807911571820646979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b28b3199da41a98d2b8aded07f8cb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumper: {fileID: 6335908699281759694}
+--- !u!114 &1215306697310243773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8807911571820646979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5706d75ece0f42b8a0a473c0a064f5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rigidBody: {fileID: 5148918215159177812}
+  _jumpForce: 5
+--- !u!114 &5623522283073203136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8807911571820646979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4837a7263a064c84bbd3d84fff3d806e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _groundCheck: {fileID: 6714023084208906533}
   _groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  _groundCheck: {fileID: 6714023084208906533}
   _groundCheckRadius: 0.2
-  _rigidBody: {fileID: 5148918215159177812}
-  _jumpForce: 5
 --- !u!114 &13699673697389211
 MonoBehaviour:
   m_ObjectHideFlags: 0
