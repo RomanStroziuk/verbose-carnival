@@ -1,3 +1,4 @@
+using Code.Runtime.Gameplay.Logic.Sounds;
 using Code.Runtime.Gameplay.Service.Wallet;
 using Code.Runtime.Gameplay.View;
 using Code.Runtime.Infrastructure.Services.SaveLoad;
@@ -7,17 +8,17 @@ using Zenject;
 
 namespace Code.Runtime.Gameplay.Logic
 {
-    public class Coin : MonoBehaviour, ICollecteble, IPlaySound
+    public class Coin : MonoBehaviour, ICollecteble
     {
         [FormerlySerializedAs("moveFader")] [FormerlySerializedAs("_moveFadeDestroyer")] [SerializeField]
         private MoveFaderDestroy moveFaderDestroy;
 
         [SerializeField] private Rigidbody2D _rigidbody2D;
+
         [SerializeField] private Collider2D _collider2D;
+        
+        private string _collectSoundName = "Coin";
 
-        [SerializeField] private AudioClip _collectSound; 
-
-        private AudioSource _audioSource;
         private IWalletService _walletService;
         private ISaveLoadService _saveLoadService;
 
@@ -30,47 +31,20 @@ namespace Code.Runtime.Gameplay.Logic
             _walletService = walletService;
         }
 
-        private void Awake()
-        {
-            _audioSource = gameObject.GetComponent<AudioSource>() ?? gameObject.AddComponent<AudioSource>();
-            _audioSource.playOnAwake = false;
-        }
-
         public void Collect(Collector collector)
         {
-            if (IsCollected) return;
-
-            IsCollected = true;
-
             _walletService.AddCoin();
             _saveLoadService.SaveProgress();
+            IsCollected = true;
 
-            PlaySound();
-
-            HideObject();
-
-            Destroy(gameObject, _collectSound != null ? _collectSound.length : 0.1f);
-        }
-
-        public void PlaySound()
-        {
-            if (_audioSource != null && _collectSound != null)
+            if (AudioManager.instance != null)
             {
-                _audioSource.clip = _collectSound;
-                _audioSource.Play();
+                AudioManager.instance.Play(_collectSoundName);
             }
-        }
-
-        private void HideObject()
-        {
-            Renderer renderer = GetComponent<Renderer>();
-            if (renderer != null) renderer.enabled = false;
-
-            if (_collider2D != null) _collider2D.enabled = false;
-
-            if (_rigidbody2D != null) Destroy(_rigidbody2D);
-
-            moveFaderDestroy?.Destroy();
+            
+            Destroy(_rigidbody2D);
+            _collider2D.enabled = false;
+            moveFaderDestroy.Destroy();
         }
     }
 }

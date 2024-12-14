@@ -1,21 +1,18 @@
 using Code.Runtime.Infrastructure.Services.Random;
+using Code.Runtime.Gameplay.Logic.Sounds; 
 using UnityEngine;
 using Zenject;
 
 namespace Code.Runtime.Gameplay.Logic
 {
-    public class HealthPack : MonoBehaviour, ICollecteble, IPlaySound
+    public class HealthPack : MonoBehaviour, ICollecteble
     {
-        [SerializeField]
-        private float _minHealingAmount = 5f;
+        [SerializeField] private float _minHealingAmount = 5f;
 
-        [SerializeField]
-        private float _maxHealingAmount = 20f;
+        [SerializeField] private float _maxHealingAmount = 20f;
 
-        [SerializeField]
-        private AudioClip _collectSound;
+        private string _collectSoundName = "HealthPack";
 
-        private AudioSource _audioSource; 
         public bool IsCollected { get; private set; }
 
         private IRandomService _randomService;
@@ -24,12 +21,6 @@ namespace Code.Runtime.Gameplay.Logic
         private void Construct(IRandomService randomService)
         {
             _randomService = randomService;
-        }
-
-        private void Awake()
-        {
-            _audioSource = gameObject.GetComponent<AudioSource>() ?? gameObject.AddComponent<AudioSource>();
-            _audioSource.playOnAwake = false;
         }
 
         public void Collect(Collector collector)
@@ -46,29 +37,12 @@ namespace Code.Runtime.Gameplay.Logic
                 health.AddHealth(healingAmount);
             }
 
-            PlaySound();
-
-            HideObject();
-
-            Destroy(gameObject, _collectSound.length);
-        }
-
-        public void PlaySound()
-        {
-            if (_audioSource != null && _collectSound != null)
+            if (AudioManager.instance != null)
             {
-                _audioSource.clip = _collectSound;
-                _audioSource.Play();
+                AudioManager.instance.Play(_collectSoundName);
             }
-        }
 
-        private void HideObject()
-        {
-            Renderer renderer = GetComponent<Renderer>();
-            if (renderer != null) renderer.enabled = false;
-
-            Collider collider = GetComponent<Collider>();
-            if (collider != null) collider.enabled = false;
+            Destroy(gameObject);
         }
     }
 }
