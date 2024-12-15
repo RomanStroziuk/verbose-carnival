@@ -102,6 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minHealingAmount: 5
   _maxHealingAmount: 20
+  _collectSoundName: HealthPack
 --- !u!50 &-5236775026536542895
 Rigidbody2D:
   serializedVersion: 4

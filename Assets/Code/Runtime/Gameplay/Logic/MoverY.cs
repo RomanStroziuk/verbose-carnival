@@ -1,6 +1,5 @@
-using Code.Runtime.Data;
-using Code.Runtime.StaticData;
 using UnityEngine;
+using Code.Runtime.Gameplay.Logic.Sounds; 
 
 namespace Code.Runtime.Gameplay.Logic
 {
@@ -17,13 +16,8 @@ namespace Code.Runtime.Gameplay.Logic
         private int _maxJumps = 0;
         private int _currentJumpType;
         private bool _isJumping;
-
-        public void SetJumpType(int jumpCurrent)
-        {
-            _currentJumpType = jumpCurrent;
-            _maxJumps = _currentJumpType;
-        }
-
+        private const string JumpMusic = "Jump";
+        
         private void Update()
         {
             if (IsGrounded() && !_isJumping)
@@ -35,6 +29,12 @@ namespace Code.Runtime.Gameplay.Logic
             {
                 _isJumping = false;
             }
+        }
+
+        public void SetJumpType(int jumpCurrent)
+        {
+            _currentJumpType = jumpCurrent;
+            _maxJumps = _currentJumpType;
         }
 
         public void TryJump()
@@ -51,6 +51,11 @@ namespace Code.Runtime.Gameplay.Logic
         {
             _rigidBody.velocity = new Vector2(_rigidBody.velocity.x, 0);
             _rigidBody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+
+            if (AudioManager.instance != null)
+            {
+                AudioManager.instance.Play(JumpMusic);
+            }
         }
 
         private bool IsGrounded()

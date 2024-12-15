@@ -1,4 +1,4 @@
-using System.ComponentModel;
+using Code.Runtime.Gameplay.Logic.Sounds;
 using Code.Runtime.Gameplay.Service.Wallet;
 using Code.Runtime.Gameplay.View;
 using Code.Runtime.Infrastructure.Services.SaveLoad;
@@ -16,6 +16,8 @@ namespace Code.Runtime.Gameplay.Logic
         [SerializeField] private Rigidbody2D _rigidbody2D;
 
         [SerializeField] private Collider2D _collider2D;
+        
+        private string _collectSoundName = "Coin";
 
         private IWalletService _walletService;
         private ISaveLoadService _saveLoadService;
@@ -35,6 +37,11 @@ namespace Code.Runtime.Gameplay.Logic
             _saveLoadService.SaveProgress();
             IsCollected = true;
 
+            if (AudioManager.instance != null)
+            {
+                AudioManager.instance.Play(_collectSoundName);
+            }
+            
             Destroy(_rigidbody2D);
             _collider2D.enabled = false;
             moveFaderDestroy.Destroy();
