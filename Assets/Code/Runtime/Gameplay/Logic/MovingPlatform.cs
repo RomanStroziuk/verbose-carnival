@@ -29,10 +29,10 @@ namespace Code.Runtime.Gameplay.Logic
 
         private void OnDrawGizmosSelected()
         {
-            Gizmos.color = Color.green; 
+            Gizmos.color = Color.green;
             Gizmos.DrawLine(pointA, pointB);
 
-            Gizmos.color = Color.red; 
+            Gizmos.color = Color.red;
             Gizmos.DrawSphere(pointA, 0.2f);
             Gizmos.DrawSphere(pointB, 0.2f);
         }
