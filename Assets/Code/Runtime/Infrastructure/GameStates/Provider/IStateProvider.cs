@@ -1,4 +1,6 @@
-namespace Code.Runtime.Infrastructure.GameStates
+using Code.Runtime.Infrastructure.GameStates.Api;
+
+namespace Code.Runtime.Infrastructure.GameStates.Provider
 {
     public interface IStateProvider 
     {

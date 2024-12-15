@@ -1,11 +1,10 @@
-﻿using System.Numerics;
-using Code.Runtime.Extensions;
+﻿using Code.Runtime.Extensions;
 using Code.Runtime.Gameplay.Logic;
 using UnityEditor;
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 
-namespace Code.Runtime.Editor
+namespace Code.Editor
 {
     [CustomEditor(typeof(CollectablesSpawner))]
     public class CollectablesSpawnerEditor : UnityEditor.Editor

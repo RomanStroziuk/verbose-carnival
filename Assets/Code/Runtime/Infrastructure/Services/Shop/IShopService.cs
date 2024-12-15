@@ -6,7 +6,7 @@ namespace Code.Runtime.Infrastructure.Services.Shop
 {
     public interface IShopService : IReadProgress, IWriteProgress
     {
-        bool CanBuyItem(ShopItemId hatType);
+        bool CanBuyItem(ShopItemId itemType);
         void BuyItem(ShopItemId hatType);
     }
 }

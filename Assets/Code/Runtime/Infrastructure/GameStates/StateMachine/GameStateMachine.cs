@@ -1,9 +1,8 @@
 using Code.Runtime.Infrastructure.GameStates.Api;
-using Code.Runtime.Infrastructure.GameStates.State;
-using Code.Runtime.Infrastructure.GameStates.StateMachine;
+using Code.Runtime.Infrastructure.GameStates.Provider;
 using UnityEngine;
 
-namespace Code.Runtime.Infrastructure.GameStates
+namespace Code.Runtime.Infrastructure.GameStates.StateMachine
 {
     public class GameStateMachine : IGameStateMachine
     {
@@ -14,7 +13,6 @@ namespace Code.Runtime.Infrastructure.GameStates
         {
             _stateProvider = stateProvider;
         }
-
 
         public void Enter<TState>()
             where TState : class, IEnterableState
@@ -43,8 +41,6 @@ namespace Code.Runtime.Infrastructure.GameStates
         private TState GetState<TState>()
             where TState : class, IState =>
             _stateProvider.GetState<TState>();
-       
-        
        
     }
 }

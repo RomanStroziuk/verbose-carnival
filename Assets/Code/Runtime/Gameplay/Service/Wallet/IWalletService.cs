@@ -8,5 +8,6 @@ namespace Code.Runtime.Gameplay.Service.Wallet
         void AddCoin();
         bool IsEnoughMoney(int configPrice);
         void Purchase(int price);
+        void RemoveCoins(int coinsToRemove);
     }
 }

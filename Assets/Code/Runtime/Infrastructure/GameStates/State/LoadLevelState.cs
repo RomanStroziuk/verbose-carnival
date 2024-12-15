@@ -1,4 +1,3 @@
-using Code.Runtime.Gameplay.Markers;
 using Code.Runtime.Infrastructure.Factories;
 using Code.Runtime.Infrastructure.GameStates.Api;
 using Code.Runtime.Infrastructure.GameStates.StateMachine;
@@ -27,7 +26,6 @@ namespace Code.Runtime.Infrastructure.GameStates.State
             _staticData = staticData;
         }
 
-
         public void Enter(string payload)
         {
             _sceneLoader.LoadScene(payload);
@@ -35,8 +33,7 @@ namespace Code.Runtime.Infrastructure.GameStates.State
             LevelData levelData = _staticData.GetLevelData(payload);
             GameObject spawnPlayer = _gameFactory.CreatePlayer(levelData.PlayerPosition);
             _gameFactory.CreateHud(spawnPlayer);
-
-
+            
             _stateMachine.Enter<LevelState>();
         }
     }

@@ -1,5 +1,4 @@
 using Code.Runtime.Gameplay.Service.Wallet;
-using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using Zenject;
