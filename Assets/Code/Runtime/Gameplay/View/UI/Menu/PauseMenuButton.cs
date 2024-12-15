@@ -1,11 +1,8 @@
-using System;
-using Code.Runtime.Gameplay.Logic.Sounds;
 using Code.Runtime.Infrastructure.GameStates.StateMachine;
 using Code.Runtime.Infrastructure.GameStates.State;
 using Code.Runtime.Infrastructure.Services.Scene;
 using UnityEngine;
 using Zenject;
-
 namespace Code.Runtime.Gameplay.View.UI.Menu
 {
     public class MenuButton : MonoBehaviour
@@ -13,7 +10,8 @@ namespace Code.Runtime.Gameplay.View.UI.Menu
         public GameObject PauseGameMenu;
         private IGameStateMachine _gameStateMachine;
         private PauseGameState _pauseGameState;
-        
+        private const string LevelNameScene = "Level";
+
         [Inject]
         private void Construct(IGameStateMachine gameStateMachine, PauseGameState pauseGameState)
         {
@@ -34,7 +32,11 @@ namespace Code.Runtime.Gameplay.View.UI.Menu
                 }
             }
         }
-        
+        public void RestartGame()
+        {
+            Time.timeScale = 1f;
+            _gameStateMachine.Enter<LoadLevelState, string>(LevelNameScene);
+        }
         public void ResumeGame()
         {
             PauseGameMenu.SetActive(false);
@@ -53,7 +55,6 @@ namespace Code.Runtime.Gameplay.View.UI.Menu
         {
             Time.timeScale = 1;
             _gameStateMachine.Enter<MenuState>();
-
         }
     }
 }

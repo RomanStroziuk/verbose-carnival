@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JumpTypeId: 2
   Sprite: {fileID: 21300000, guid: 3be80395f95ffb04694877d1fa859186, type: 3}
+  JumpAmount: 2

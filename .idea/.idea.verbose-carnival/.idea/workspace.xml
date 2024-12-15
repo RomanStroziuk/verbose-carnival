@@ -4,16 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="655959b3-fea3-48f3-ae70-b4ec4ca88c85" name="Changes" comment="kakashka ne fixitsa, sdelal kak mog">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/MenuButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/MenuButton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/PauseGameState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/PauseGameState.cs.meta" afterDir="false" />
+    <list default="true" id="655959b3-fea3-48f3-ae70-b4ec4ca88c85" name="Changes" comment="Ya zrobil Menu (mariky privet!!!!)  (marik pofiksi zvyk!!!!)">
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/DeathButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/DeathButton.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Death.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Death.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Sounds/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Sounds/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/MenuButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/PauseMenuButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/MenuButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/PauseMenuButton.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LevelState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LoadLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LoadLevelState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/MenuState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/MenuState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/ProjectInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/ProjectInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/PauseGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/PauseGameState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +58,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/54724222b7684530a2810ae1eac94ec7176000/f5/99eb9835/LoadSceneMode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/MoveFaderDestroy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Runtime/StaticData/JumpConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/SceneViewGridManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -144,7 +147,7 @@
       <workItem from="1732916586745" duration="661000" />
       <workItem from="1732917958959" duration="6957000" />
       <workItem from="1733303646448" duration="847000" />
-      <workItem from="1734272436652" duration="10343000" />
+      <workItem from="1734272436652" duration="18726000" />
     </task>
     <task id="LOCAL-00001" summary="Add coins view in main menu.">
       <option name="closed" value="true" />
@@ -266,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733846159652</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Ya zrobil Menu (mariky privet!!!!)  (marik pofiksi zvyk!!!!)">
+      <option name="closed" value="true" />
+      <created>1734283119268</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1734283119268</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +331,7 @@
     <MESSAGE value="Coin view animated" />
     <MESSAGE value="Add colections enemy and coin." />
     <MESSAGE value="kakashka ne fixitsa, sdelal kak mog" />
-    <option name="LAST_COMMIT_MESSAGE" value="kakashka ne fixitsa, sdelal kak mog" />
+    <MESSAGE value="Ya zrobil Menu (mariky privet!!!!)  (marik pofiksi zvyk!!!!)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ya zrobil Menu (mariky privet!!!!)  (marik pofiksi zvyk!!!!)" />
   </component>
 </project>

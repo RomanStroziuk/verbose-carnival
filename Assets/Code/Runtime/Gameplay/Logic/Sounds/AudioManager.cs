@@ -73,5 +73,13 @@ namespace Code.Runtime.Gameplay.Logic.Sounds
                 s.source.Stop();
             });
         }
+        
+        public void StopAll()
+        {
+            foreach (Sound s in sounds)
+            {
+                s.source.Stop();
+            }
+        }
     }
 }

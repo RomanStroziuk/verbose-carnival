@@ -1,5 +1,8 @@
 using Code.Runtime.Gameplay.Logic.Sounds;
+using Code.Runtime.Infrastructure.GameStates.State;
+using Code.Runtime.Infrastructure.GameStates.StateMachine;
 using Code.Runtime.Infrastructure.Services.Input;
+using Code.Runtime.Infrastructure.Services.Scene;
 using UnityEngine;
 using Zenject;
 
@@ -16,12 +19,18 @@ namespace Code.Runtime.Gameplay.Logic
         [SerializeField] private Collider2D _collider;
 
         private IInputService _inputService;
+        
+        private ISceneLoader _sceneLoader;
+        
 
-        private const string LevelMusicName = "ActiveGame";
+        private const string DeathSceneName = "DeathMenu";
 
         [Inject]
-        private void Construct(IInputService inputService) =>
+        private void Construct(IInputService inputService, ISceneLoader sceneLoader)
+        {
             _inputService = inputService;
+            _sceneLoader = sceneLoader;
+        }
 
         private void OnValidate()
         {
@@ -45,8 +54,11 @@ namespace Code.Runtime.Gameplay.Logic
 
             if (AudioManager.instance != null)
             {
-                AudioManager.instance.Stop(LevelMusicName);
+                AudioManager.instance.StopAll();
             }
+            _sceneLoader.LoadScene(DeathSceneName);
+
+            
         }
     }
 }

@@ -8,8 +8,7 @@ namespace Code.Runtime.Infrastructure.GameStates.State
 {
     public class LevelState : IEnterableState, IExitableState
     {
-        private const string MenuMusicName = "PauseGame";
-        private const string PreviousMusicName = "StartMenu"; 
+
         private const string LevelMusicName = "ActiveGame";   
         private const float FadeDuration = 1f;                
 
@@ -28,8 +27,8 @@ namespace Code.Runtime.Infrastructure.GameStates.State
 
             if (AudioManager.instance != null)
             {
-                AudioManager.instance.FadeOut(MenuMusicName, FadeDuration);
-                AudioManager.instance.FadeOut(PreviousMusicName, FadeDuration); 
+                AudioManager.instance.StopAll();
+
                 AudioManager.instance.FadeIn(LevelMusicName, 0.1f, FadeDuration);
             }
 

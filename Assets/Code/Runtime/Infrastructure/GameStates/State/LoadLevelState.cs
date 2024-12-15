@@ -33,8 +33,9 @@ namespace Code.Runtime.Infrastructure.GameStates.State
             LevelData levelData = _staticData.GetLevelData(payload);
             GameObject spawnPlayer = _gameFactory.CreatePlayer(levelData.PlayerPosition);
             _gameFactory.CreateHud(spawnPlayer);
-            
+
             _stateMachine.Enter<LevelState>();
         }
+        
     }
 }
