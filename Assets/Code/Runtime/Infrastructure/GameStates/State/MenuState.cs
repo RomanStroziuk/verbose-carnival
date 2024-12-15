@@ -7,8 +7,12 @@ namespace Code.Runtime.Infrastructure.GameStates.State
     public sealed class MenuState : IEnterableState
     {
         private const string MenuSceneName = "Menu";
+        
+        private const string PauseMusicName = "PauseGame";
+        private const string ActiveGameName = "ActiveGame"; 
         private const string MenuMusicName = "StartMenu";
-
+        private const float FadeDuration = 1f;                
+        
         private readonly ISceneLoader _sceneLoader;
 
         public MenuState(ISceneLoader sceneLoader)
@@ -22,7 +26,10 @@ namespace Code.Runtime.Infrastructure.GameStates.State
 
             if (AudioManager.instance != null)
             {
-                AudioManager.instance.Play(MenuMusicName);
+                AudioManager.instance.FadeOut(PauseMusicName, FadeDuration);
+                AudioManager.instance.FadeOut(ActiveGameName, FadeDuration); 
+                
+                AudioManager.instance.FadeIn(MenuMusicName, 0.1f, FadeDuration);
             }
         }
     }

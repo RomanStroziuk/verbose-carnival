@@ -5,57 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="655959b3-fea3-48f3-ae70-b4ec4ca88c85" name="Changes" comment="kakashka ne fixitsa, sdelal kak mog">
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/MenuButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/MenuButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/PauseGameState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/PauseGameState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/GroundChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/GroundChecker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Jumper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Jumper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/MoverY.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/MoverY.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/PlayerInputY.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/PlayerInputY.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/MoveView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/MoveView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Factories/GameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Factories/GameFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Input/InputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Input/InputService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/StaticData/JumpConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/StaticData/JumpConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/CoinDepleter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/CoinDepleter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/GroundChecker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/GroundChecker.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/HealthPack.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/HealthPack.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Jumper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Jumper.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/PlayerJumpInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/PlayerJumpInput.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Editor/CollectablesSpawnerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Editor/CollectablesSpawnerEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Editor/LevelStaticDataEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Editor/LevelStaticDataEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Extensions/Vector3Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Extensions/Vector3Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Coin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Collector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Collector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/PlayerInputX.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/PlayerInputX.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Service/Wallet/IWalletService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Service/Wallet/IWalletService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Service/Wallet/WalletService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Service/Wallet/WalletService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/CoinView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/CoinView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/HealthBar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Hud.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Hud.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/PlayButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/PlayButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Factories/GameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Factories/GameFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LevelState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/MenuState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/MenuState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/ProjectInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/ProjectInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Input/IInputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Input/IInputService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Input/InputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Input/InputService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/SaveLoad/ISaveLoadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/SaveLoad/ISaveLoadService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/SaveLoad/SaveLoadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/SaveLoad/SaveLoadService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Shop/ShopService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Shop/ShopService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Free Platform Game Assets/Enemies/Enemies/png/512x512/Pupil 512.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Free Platform Game Assets/Enemies/Enemies/png/512x512/Pupil 512.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Free Platform Game Assets/GUI ( Update 1.7 )/png/Elements1024x512.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Free Platform Game Assets/GUI ( Update 1.7 )/png/Elements1024x512.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Free Platform Game Assets/Tiles/2.5D Tiles/Autumn ( Update 1.9 )/128x128/Grass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Free Platform Game Assets/Tiles/2.5D Tiles/Autumn ( Update 1.9 )/128x128/Grass.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Free Platform Game Assets/Tiles/2D Tiles ( Update 1.9 )/Autumn/512x512/GrassColumn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Free Platform Game Assets/Tiles/2D Tiles ( Update 1.9 )/Autumn/512x512/GrassColumn.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,13 +46,14 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/RomanStroziuk/verbose-carnival.git&quot;,
-    &quot;accountId&quot;: &quot;a812acdf-197d-4f9e-a354-2d3a018cbfb7&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/RomanStroziuk/verbose-carnival.git",
+    "accountId": "c71a463b-db63-4c1e-b366-40ef37869afc"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/54724222b7684530a2810ae1eac94ec7176000/f5/99eb9835/LoadSceneMode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/MoveFaderDestroy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Runtime/StaticData/JumpConfig.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -113,19 +73,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "git-widget-placeholder": "life-cycle",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CodeLensConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="A:\unity\2022.3.42f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\UnityRomaFinal\verbose-carnival -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\UnityRomaFinal\verbose-carnival" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -133,6 +96,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="A:\unity\2022.3.42f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\UnityRomaFinal\verbose-carnival -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\UnityRomaFinal\verbose-carnival" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -144,22 +108,16 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
-      <option name="runtimes">
-        <list />
-      </option>
       <option name="selectedOptions">
         <list />
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18232">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="18232" />
       <option name="projectPathOnTarget" />
-      <option name="runtimes">
-        <list />
-      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -186,6 +144,7 @@
       <workItem from="1732916586745" duration="661000" />
       <workItem from="1732917958959" duration="6957000" />
       <workItem from="1733303646448" duration="847000" />
+      <workItem from="1734272436652" duration="10343000" />
     </task>
     <task id="LOCAL-00001" summary="Add coins view in main menu.">
       <option name="closed" value="true" />
@@ -326,7 +285,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="life-cycle" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

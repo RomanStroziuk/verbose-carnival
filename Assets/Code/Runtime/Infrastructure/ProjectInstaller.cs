@@ -48,6 +48,7 @@ namespace Code.Runtime.Infrastructure
             Container.BindInterfacesAndSelfTo<MenuState>().AsSingle();
             Container.BindInterfacesAndSelfTo<LoadLevelState>().AsSingle();
             Container.BindInterfacesAndSelfTo<LevelState>().AsSingle();
+            Container.BindInterfacesAndSelfTo<PauseGameState>().AsSingle();
         }
 
         private void BindInfrastructureServices()
