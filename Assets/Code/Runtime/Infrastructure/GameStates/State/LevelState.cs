@@ -10,7 +10,7 @@ namespace Code.Runtime.Infrastructure.GameStates.State
     {
         private const string PreviousMusicName = "StartMenu"; 
         private const string LevelMusicName = "ActiveGame";   
-        private const float FadeDuration = 1f;                
+        private const float FadeDuration = 2f;                
 
         private readonly IInputService _inputService;
         private readonly IStaticDataService _staticDataService;
