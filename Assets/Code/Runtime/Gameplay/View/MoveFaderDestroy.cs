@@ -23,9 +23,7 @@ namespace Code.Runtime.Gameplay.View
                 .Join(Move())
                 .OnComplete(() => Destroy(gameObject))
                 .Play();
-
         
-
         private Tween Move() =>
           gameObject
               .transform.

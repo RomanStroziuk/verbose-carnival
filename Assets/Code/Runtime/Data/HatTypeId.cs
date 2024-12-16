@@ -1,5 +1,3 @@
-using Unity.VisualScripting;
-
 namespace Code.Runtime.Data
 {
     public enum HatTypeId

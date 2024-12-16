@@ -1,9 +1,6 @@
 using System;
-using Code.Runtime.Data;
 using Code.Runtime.Infrastructure.Services.Shop;
-using Code.Runtime.StaticData;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -27,11 +24,11 @@ namespace Code.Runtime.Gameplay.View.UI.Shop
         private void Awake() =>
             _buyButton.onClick.AddListener(Buy);
         
-
         private void OnDestroy() =>
             _buyButton.onClick.RemoveAllListeners();
 
         private IShopService _shopService;
+        
         private ShopItemId _shopTypeId;
         public event Action Bought; 
 
@@ -56,7 +53,5 @@ namespace Code.Runtime.Gameplay.View.UI.Shop
             _shopService.BuyItem(_shopTypeId);
             Bought?.Invoke();
         }
-
-       
     }
 }
