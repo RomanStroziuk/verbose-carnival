@@ -5,7 +5,7 @@ using Zenject;
 
 namespace Code.Runtime.Gameplay.Logic
 {
-    public class HealthPack : MonoBehaviour, ICollecteble
+    public class HealthHelper : MonoBehaviour, ICollecteble
     {
         [SerializeField] private float _minHealingAmount = 5f;
 

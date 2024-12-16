@@ -8,7 +8,7 @@ namespace Code.Runtime.Gameplay.Logic
         public Vector3 pointB;
 
         [SerializeField]
-        public float speed = 2.0f;
+        public float speed = 1.0f;
 
         private Vector3 targetPosition;
 
@@ -25,16 +25,6 @@ namespace Code.Runtime.Gameplay.Logic
             {
                 targetPosition = targetPosition == pointA ? pointB : pointA;
             }
-        }
-
-        private void OnDrawGizmosSelected()
-        {
-            Gizmos.color = Color.green;
-            Gizmos.DrawLine(pointA, pointB);
-
-            Gizmos.color = Color.red;
-            Gizmos.DrawSphere(pointA, 0.2f);
-            Gizmos.DrawSphere(pointB, 0.2f);
         }
     }
 }

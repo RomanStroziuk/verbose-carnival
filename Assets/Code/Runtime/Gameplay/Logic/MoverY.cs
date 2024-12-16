@@ -9,7 +9,6 @@ namespace Code.Runtime.Gameplay.Logic
         [SerializeField] private float _jumpForce = 7f;
         [SerializeField] private GameObject _groundCheck;  
         [SerializeField] private LayerMask _groundLayer;
-        [SerializeField] private float _groundCheckRadius = 0.2f;
         [SerializeField] private float _groundRayLength = 1f; 
 
         private int _remainingJumps = 0;

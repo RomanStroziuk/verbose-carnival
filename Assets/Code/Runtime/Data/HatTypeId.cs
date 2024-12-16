@@ -5,6 +5,7 @@ namespace Code.Runtime.Data
         None = 0,
         Medical = 1,
         Army = 2,
-        Crow = 3
+        Crow = 3,
+        Horse = 4
     }
 }

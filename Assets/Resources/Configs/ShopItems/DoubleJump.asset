@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb672f34903e4e668a7e8955907cd238, type: 3}
   m_Name: DoubleJump
   m_EditorClassIdentifier: 
-  Name: Double Jump
-  Sprite: {fileID: 21300000, guid: cbca37570d2d07e4494f6767bb97a14f, type: 3}
-  Price: 50
+  Name: Jump 2
+  Sprite: {fileID: -1649492149, guid: 9fb826f3ca5c937439ca036782864fa1, type: 3}
+  Price: 10
   ShopItemId: 5
   HatTypeId: 0
   JumpTypeId: 2

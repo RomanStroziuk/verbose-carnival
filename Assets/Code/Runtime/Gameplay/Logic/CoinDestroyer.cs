@@ -6,7 +6,7 @@ using Zenject;
 
 namespace Code.Runtime.Gameplay.Logic
 {
-    public class CoinDepleter : MonoBehaviour, ICollecteble
+    public class CoinDestroyer : MonoBehaviour, ICollecteble
     {
         [SerializeField]
         private int _minCoinAmountToRemove = 5; 

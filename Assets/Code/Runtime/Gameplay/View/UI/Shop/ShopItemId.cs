@@ -7,6 +7,7 @@ namespace Code.Runtime.Gameplay.View.UI.Shop
         ArmyHat = 2,
         CrowHat = 3,
         SingleJump = 4,
-        DoubleJump = 5
+        DoubleJump = 5,
+        HorseHat = 6
     }
 }
