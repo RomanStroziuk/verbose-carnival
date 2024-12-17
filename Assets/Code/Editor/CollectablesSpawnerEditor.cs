@@ -1,6 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 using Code.Runtime.Gameplay.Logic;
+using Code.Runtime.Gameplay.Logic.Collectables;
 
 namespace Code.Editor
 {

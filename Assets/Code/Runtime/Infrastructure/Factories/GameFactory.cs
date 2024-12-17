@@ -1,4 +1,5 @@
 using Code.Runtime.Gameplay.Logic;
+using Code.Runtime.Gameplay.Logic.Movement;
 using Code.Runtime.Gameplay.View;
 using Code.Runtime.Gameplay.View.UI;
 using Code.Runtime.Infrastructure.Services.PlayerInventory;

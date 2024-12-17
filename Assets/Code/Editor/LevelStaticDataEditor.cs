@@ -26,6 +26,7 @@ namespace Code.Editor
             LevelData levelData = (LevelData)target;
             levelData.LevelName = SceneManager.GetActiveScene().name;
             levelData.PlayerPosition = FindObjectOfType<PlayerSpawnPoint>().transform.position;
+            EditorUtility.SetDirty(levelData);
         }
     }
 }

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d706ea03c98444e189d6674b2a41fc13, type: 3}
   m_Name: Level
   m_EditorClassIdentifier: 
-  LevelName: 
-  PlayerPosition: {x: 0, y: 0, z: 0}
+  LevelName: Level
+  PlayerPosition: {x: 2.89, y: -2.2, z: 0}

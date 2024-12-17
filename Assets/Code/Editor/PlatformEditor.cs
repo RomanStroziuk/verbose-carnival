@@ -1,18 +1,19 @@
 using Code.Runtime.Extensions;
 using Code.Runtime.Gameplay.Logic;
+using Code.Runtime.Gameplay.Logic.Platform;
 using UnityEditor;
 using UnityEngine;
 
 namespace Code.Editor
 {
-    [CustomEditor(typeof(MovingPlatform))]
+    [CustomEditor(typeof(PlatformMovement))]
     public class PlatformEditor : UnityEditor.Editor
     {
         private const float LineThickness = 3f;
 
         private void OnSceneGUI()
         {
-            var platform = (MovingPlatform)target;
+            var platform = (PlatformMovement)target;
 
             Handles.color = Color.green;
             Handles.DrawLine(platform.pointA, platform.pointB, LineThickness);
@@ -42,7 +43,7 @@ namespace Code.Editor
 
         private void OnDrawGizmosSelected()
         {
-            var platform = (MovingPlatform)target;
+            var platform = (PlatformMovement)target;
 
             Gizmos.color = Color.green;
             Gizmos.DrawLine(platform.pointA, platform.pointB);

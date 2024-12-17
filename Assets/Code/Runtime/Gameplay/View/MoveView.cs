@@ -1,5 +1,6 @@
 ﻿using Code.Runtime.Extensions;
 using Code.Runtime.Gameplay.Logic;
+using Code.Runtime.Gameplay.Logic.Movement;
 using UnityEngine;
 
 namespace Code.Runtime.Gameplay.View

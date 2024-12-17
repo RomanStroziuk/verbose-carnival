@@ -1,21 +1,23 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-[CreateAssetMenu(fileName = "CollectablesConfig", menuName = "Configs/CollectablesConfig")]
-public class CollectablesConfig : ScriptableObject
+namespace Code.Runtime.StaticData
 {
-    [Serializable]
-    public class CollectableItem
+    [CreateAssetMenu(fileName = "CollectablesConfig", menuName = "Configs/CollectablesConfig")]
+    public class CollectablesConfig : ScriptableObject
     {
-        public GameObject Prefab; // Префаб предмета
-        [Range(1, 100)] public int Weight = 1; // Вага для ймовірності
+        [Serializable]
+        public class CollectableItem
+        {
+            public GameObject Prefab;
+            [Range(1, 100)] public int Rarity = 1;
+        }
+
+        [Header("Spawn Settings")] public float SpawnInterval = 2f;
+        public float RandomDeltaX = 2f;
+
+        [Header("Collectables")] public List<CollectableItem> Items;
     }
-
-    [Header("Spawn Settings")]
-    public float SpawnInterval = 2f; // Інтервал між спавнами
-    public float RandomDeltaX = 2f; // Діапазон для випадкового X
-
-    [Header("Collectables")]
-    public List<CollectableItem> Items; // Список предметів і їхніх ваг
 }

@@ -171,13 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc72171737874f66a3a1cfecc901e8f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnInterval: 2.05
-  _collectables:
-  - {fileID: 9015378559501830745, guid: b06b285e4b76aea43a7a16e51bdc3aa5, type: 3}
-  - {fileID: 1060732654390995167, guid: 4962b1402b5a8f44586f9dae18a6ed45, type: 3}
-  - {fileID: 7028337589926629230, guid: ef2261ce03b7ba84caf9864a76a3c153, type: 3}
-  - {fileID: 7246321368763967505, guid: dd5d310fb065c9e49abf6beaacf4d16e, type: 3}
-  _randomDeltaX: 4
+  configuration: {fileID: 11400000, guid: 8323d04c1e6415d409e64a25d01923d4, type: 2}
 --- !u!1 &119357653
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,7 +183,7 @@ GameObject:
   - component: {fileID: 119357655}
   - component: {fileID: 119357654}
   m_Layer: 0
-  m_Name: Asset 15
+  m_Name: Flower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -604,7 +598,7 @@ Transform:
   m_GameObject: {fileID: 775544213}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.59, y: -3.37, z: 0}
+  m_LocalPosition: {x: 2.89, y: -2.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1238,7 +1232,7 @@ GameObject:
   - component: {fileID: 1884845800}
   - component: {fileID: 1884845799}
   m_Layer: 0
-  m_Name: Asset 15 (1)
+  m_Name: Flower1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
