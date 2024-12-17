@@ -5,7 +5,7 @@ using Zenject;
 
 namespace Code.Runtime.Gameplay.Logic.Collectables
 {
-    public class HealthHelper : MonoBehaviour, ICollecteble
+    public class HealthKit : MonoBehaviour, ICollecteble
     {
         [SerializeField] private float _minHealingAmount = 5f;
 
@@ -37,9 +37,9 @@ namespace Code.Runtime.Gameplay.Logic.Collectables
                 health.AddHealth(healingAmount);
             }
 
-            if (AudioManager.instance != null)
+            if (AudioManager._instance != null)
             {
-                AudioManager.instance.Play(_collectSoundName);
+                AudioManager._instance.Play(_collectSoundName);
             }
 
             Destroy(gameObject);

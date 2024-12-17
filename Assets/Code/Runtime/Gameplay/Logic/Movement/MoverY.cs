@@ -51,9 +51,9 @@ namespace Code.Runtime.Gameplay.Logic.Movement
             _rigidBody.velocity = new Vector2(_rigidBody.velocity.x, 0);
             _rigidBody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
 
-            if (AudioManager.instance != null)
+            if (AudioManager._instance != null)
             {
-                AudioManager.instance.Play(JumpMusic);
+                AudioManager._instance.Play(JumpMusic);
             }
         }
 

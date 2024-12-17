@@ -37,9 +37,9 @@ namespace Code.Runtime.Gameplay.Logic.Collectables
             _saveLoadService.SaveProgress();
             IsCollected = true;
 
-            if (AudioManager.instance != null)
+            if (AudioManager._instance != null)
             {
-                AudioManager.instance.Play(_collectSoundName);
+                AudioManager._instance.Play(_collectSoundName);
             }
             
             Destroy(_rigidbody2D);

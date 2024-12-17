@@ -20,9 +20,9 @@ namespace Code.Runtime.Infrastructure.GameStates.State
         {
             _sceneLoader.LoadScene(MenuSceneName);
 
-            if (AudioManager.instance != null)
+            if (AudioManager._instance != null)
             {
-                AudioManager.instance.Play(MenuMusicName);
+                AudioManager._instance.Play(MenuMusicName);
             }
         }
     }

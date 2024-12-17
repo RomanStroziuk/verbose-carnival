@@ -26,10 +26,10 @@ namespace Code.Runtime.Infrastructure.GameStates.State
         {
             _inputService.Enable();
 
-            if (AudioManager.instance != null)
+            if (AudioManager._instance != null)
             {
-                AudioManager.instance.FadeOut(PreviousMusicName, FadeDuration);
-                AudioManager.instance.FadeIn(LevelMusicName, MusicVolume, FadeDuration);
+                AudioManager._instance.FadeOut(PreviousMusicName, FadeDuration);
+                AudioManager._instance.FadeIn(LevelMusicName, MusicVolume, FadeDuration);
             }
 
             Debug.Log($"Start health of player in config is {_staticDataService.PlayerConfig.StartHealth} ");

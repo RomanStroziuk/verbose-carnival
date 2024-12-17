@@ -9,6 +9,11 @@ namespace Code.Runtime.Infrastructure.Services.Random
             return UnityEngine.Random.Range(minInclusive, maxInclusive);
         }
 
+        public int RangeInt(int minInclusive, int maxInclusive)
+        {
+            return UnityEngine.Random.Range(minInclusive, maxInclusive);
+        }
+        
         public T ChooseFromList<T>(List<T> list)
         {
             if (list.Count == 0)

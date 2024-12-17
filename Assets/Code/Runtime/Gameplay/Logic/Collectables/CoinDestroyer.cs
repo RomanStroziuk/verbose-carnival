@@ -29,7 +29,7 @@ namespace Code.Runtime.Gameplay.Logic.Collectables
 
         public void Collect(Collector collector)
         {
-            int coinsToRemove = (int)_randomService.Range(_minCoinAmountToRemove, _maxCoinAmountToRemove + 1);
+            int coinsToRemove = _randomService.RangeInt(_minCoinAmountToRemove, _maxCoinAmountToRemove + 1);
             _walletService.RemoveCoins(coinsToRemove);
             _saveLoadService.SaveProgress();
             IsCollected = true;

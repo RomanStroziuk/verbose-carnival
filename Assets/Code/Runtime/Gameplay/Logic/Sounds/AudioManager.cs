@@ -6,20 +6,20 @@ namespace Code.Runtime.Gameplay.Logic.Sounds
 {
     public class AudioManager : MonoBehaviour
     {
-        public static AudioManager instance;
+        public static AudioManager _instance;
 
         public Sound[] sounds;
 
         void Awake()
         {
-            if (instance != null)
+            if (_instance != null)
             {
                 Destroy(gameObject);
                 return;
             }
             else
             {
-                instance = this;
+                _instance = this;
                 DontDestroyOnLoad(gameObject);
             }
 

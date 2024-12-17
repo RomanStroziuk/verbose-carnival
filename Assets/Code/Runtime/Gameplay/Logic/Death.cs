@@ -43,9 +43,9 @@ namespace Code.Runtime.Gameplay.Logic
             _rigidbody2D.AddForce(Vector2.up * _forceonDeath, ForceMode2D.Impulse);
             _collider.enabled = false;
 
-            if (AudioManager.instance != null)
+            if (AudioManager._instance != null)
             {
-                AudioManager.instance.Stop(LevelMusicName);
+                AudioManager._instance.Stop(LevelMusicName);
             }
         }
     }

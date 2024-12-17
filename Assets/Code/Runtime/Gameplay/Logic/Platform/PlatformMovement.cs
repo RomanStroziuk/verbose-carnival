@@ -9,21 +9,25 @@ namespace Code.Runtime.Gameplay.Logic.Platform
 
         [SerializeField]
         public float speed = 1.0f;
+        
+        [SerializeField]
+        private float targetThreshold = 0.1f;
 
-        private Vector3 targetPosition;
+
+        private Vector3 _targetPosition;
 
         void Start()
         {
-            targetPosition = pointB;
+            _targetPosition = pointB;
         }
 
         void Update()
         {
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, _targetPosition, speed * Time.deltaTime);
 
-            if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
+            if (Vector3.Distance(transform.position, _targetPosition) < targetThreshold)
             {
-                targetPosition = targetPosition == pointA ? pointB : pointA;
+                _targetPosition = _targetPosition == pointA ? pointB : pointA;
             }
         }
     }
