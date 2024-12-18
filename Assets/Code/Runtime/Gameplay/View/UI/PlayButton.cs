@@ -8,11 +8,9 @@ namespace Code.Runtime.Gameplay.View.UI
 {
     public class PlayButton : MonoBehaviour
     {
-        [SerializeField]
         private const string LevelNameScene = "Level";
         public Button _button;
         private IGameStateMachine _gameStateMachine;
-
 
         [Inject]
         private void Construct(IGameStateMachine gameStateMachine)

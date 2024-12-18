@@ -1,6 +1,4 @@
-using Code.Runtime.Infrastructure.GameStates.Api;
-
-namespace Code.Runtime.Infrastructure.GameStates
+namespace Code.Runtime.Infrastructure.GameStates.Api
 {
     public interface IExitableState : IState
     {
