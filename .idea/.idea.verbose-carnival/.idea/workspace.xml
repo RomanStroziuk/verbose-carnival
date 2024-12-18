@@ -4,19 +4,120 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="655959b3-fea3-48f3-ae70-b4ec4ca88c85" name="Changes" comment="Ya zrobil Menu (mariky privet!!!!)  (marik pofiksi zvyk!!!!)">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/DeathButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/DeathButton.cs.meta" afterDir="false" />
+    <list default="true" id="655959b3-fea3-48f3-ae70-b4ec4ca88c85" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Death.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Death.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Sounds/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Sounds/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/MenuButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/PauseMenuButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/MenuButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/UI/Menu/PauseMenuButton.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LevelState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LoadLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LoadLevelState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/MenuState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/MenuState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/PauseGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/PauseGameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/Active_Gameply-Music.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/Active_Gameply-Music.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-04.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-05.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-05.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-06.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-07.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-07.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-08.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-08.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-09.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-09.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-10.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-11.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-12.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-12.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-13.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-13.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-14.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-14.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-15.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-15.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-16.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-16.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-17.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-17.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-18.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-18.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-19.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-19.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-20.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-20.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-21.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-21.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-22.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-22.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-23.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-23.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-24.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-24.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-25.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-25.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-26.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-26.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-27.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-27.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-28.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-28.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-29.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-29.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-30.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-30.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-31.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-31.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-32.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-32.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-33.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-33.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-34.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-34.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-35.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-35.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-36.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-36.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-37.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-37.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-38.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-38.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-39.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-39.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-40.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-40.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-41.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-41.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-42.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-42.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-43.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-43.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-44.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-44.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-45.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-45.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-46.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-46.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-47.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-47.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-48.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-48.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-49.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-49.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-50.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/DM-CGS-50.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/Start-Menu-Music.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/Start-Menu-Music.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/license.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Game Sounds U6/CasualGameSounds/license.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/SaveLoadRegistry/ISaveLoadRegistryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/SaveLoadRegistry/ISaveLoadRegistryService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +149,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/RomanStroziuk/verbose-carnival.git",
-    "accountId": "c71a463b-db63-4c1e-b366-40ef37869afc"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RomanStroziuk/verbose-carnival.git&quot;,
+    &quot;accountId&quot;: &quot;c71a463b-db63-4c1e-b366-40ef37869afc&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/54724222b7684530a2810ae1eac94ec7176000/f5/99eb9835/LoadSceneMode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/View/MoveFaderDestroy.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,19 +177,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "git-widget-placeholder": "life-cycle",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CodeLensConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;life-cycle&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="A:\unity\2022.3.42f1\Editor\Unity.exe" />
@@ -116,10 +217,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18232">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="18232" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -147,7 +248,9 @@
       <workItem from="1732916586745" duration="661000" />
       <workItem from="1732917958959" duration="6957000" />
       <workItem from="1733303646448" duration="847000" />
-      <workItem from="1734272436652" duration="18726000" />
+      <workItem from="1734272436652" duration="19810000" />
+      <workItem from="1734532663951" duration="3534000" />
+      <workItem from="1734537841357" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="Add coins view in main menu.">
       <option name="closed" value="true" />
@@ -277,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734283119268</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Death menu, no ono nerobit(">
+      <option name="closed" value="true" />
+      <created>1734291774063</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1734291774063</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +403,31 @@
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="life-cycle" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -332,6 +468,7 @@
     <MESSAGE value="Add colections enemy and coin." />
     <MESSAGE value="kakashka ne fixitsa, sdelal kak mog" />
     <MESSAGE value="Ya zrobil Menu (mariky privet!!!!)  (marik pofiksi zvyk!!!!)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ya zrobil Menu (mariky privet!!!!)  (marik pofiksi zvyk!!!!)" />
+    <MESSAGE value="Death menu, no ono nerobit(" />
+    <option name="LAST_COMMIT_MESSAGE" value="Death menu, no ono nerobit(" />
   </component>
 </project>

@@ -16,8 +16,8 @@ namespace Code.Editor
 
             Vector3 position = spawner.transform.position;
             Handles.DrawLine(position + Vector3.right * -spawner.RandomDeltaX,
-                position + Vector3.right * spawner.RandomDeltaX,
-                RandomXRangeThickness);
+            position + Vector3.right * spawner.RandomDeltaX,
+            RandomXRangeThickness);
         }
     }
 }
