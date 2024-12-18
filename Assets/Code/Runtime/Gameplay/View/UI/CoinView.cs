@@ -7,7 +7,6 @@ namespace Code.Runtime.Gameplay.View.UI
 {
     public class CoinView : MonoBehaviour
     {
-         
         [SerializeField] 
         private TextMeshProUGUI _coinText;
         

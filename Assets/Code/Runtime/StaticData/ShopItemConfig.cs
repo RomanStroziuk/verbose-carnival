@@ -7,7 +7,6 @@ namespace Code.Runtime.StaticData
     [CreateAssetMenu(fileName = "ShopItemConfig", menuName = "StaticData/ShopItemConfig")]
     public class ShopItemConfig : ScriptableObject
     {
-       
         public string Name;
         public Sprite Sprite;
         public int Price;
