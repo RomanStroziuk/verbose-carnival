@@ -16,10 +16,10 @@ MonoBehaviour:
   RandomDeltaX: 2
   Items:
   - Prefab: {fileID: 9015378559501830745, guid: b06b285e4b76aea43a7a16e51bdc3aa5, type: 3}
-    Rarity: 15
+    Rarity: 19
   - Prefab: {fileID: 7246321368763967505, guid: dd5d310fb065c9e49abf6beaacf4d16e, type: 3}
-    Rarity: 40
+    Rarity: 17
   - Prefab: {fileID: 7028337589926629230, guid: ef2261ce03b7ba84caf9864a76a3c153, type: 3}
-    Rarity: 28
+    Rarity: 85
   - Prefab: {fileID: 1060732654390995167, guid: 4962b1402b5a8f44586f9dae18a6ed45, type: 3}
-    Rarity: 67
+    Rarity: 22

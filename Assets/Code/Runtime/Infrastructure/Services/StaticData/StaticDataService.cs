@@ -12,6 +12,7 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
         public HudConfig HUDConfig { get; set; }
         public PlayerConfig PlayerConfig { get; private set; }
         
+        private CollectablesConfig _collectablesConfig;
         private Dictionary<string, LevelData> _levelsData;
         private Dictionary<ShopItemId, ShopItemConfig> _shopItems;
         private Dictionary<HatTypeId, HatConfig> _hats;
@@ -27,8 +28,11 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
             LoadHatConfigs();
             LoadJumpConfigs();
             LoadSoundConfigs();
+            LoadCollectablesConfig();
         }
 
+        public CollectablesConfig CollectablesConfig => _collectablesConfig; 
+        
         public HatConfig GetHatConfig(HatTypeId hatTypeId) =>
             _hats.GetValueOrDefault(hatTypeId);
 
@@ -46,6 +50,11 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
         
         public LevelData GetLevelData(string levelName) => _levelsData[levelName];
 
+        private void LoadCollectablesConfig()
+        {
+            _collectablesConfig = Resources.Load<CollectablesConfig>("Configs/CollectablesConfig");
+        }
+        
         private void LoadShopItems() =>
             _shopItems = Resources
                 .LoadAll<ShopItemConfig>(path: "Configs/ShopItems")
@@ -78,6 +87,5 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
         {
             HUDConfig = Resources.Load<HudConfig>("Configs/HudConfig");
         }
-        
     }
 }

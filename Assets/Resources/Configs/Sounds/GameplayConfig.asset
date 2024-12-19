@@ -16,7 +16,7 @@ MonoBehaviour:
   Sound:
     clip: {fileID: 8300000, guid: e0e3e120eb898794b83991c2cfdfee21, type: 3}
     mixer: {fileID: 0}
-    volume: 0.5
+    volume: 0.118
     pitch: 1
     loop: 1
     source: {fileID: 0}

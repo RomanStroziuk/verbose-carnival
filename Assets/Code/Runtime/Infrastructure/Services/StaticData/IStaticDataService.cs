@@ -9,9 +9,11 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
     {
         PlayerConfig PlayerConfig { get; }
         LevelData GetLevelData(string levelName);
-        
+
         HudConfig HUDConfig { get; }
-        
+
+        CollectablesConfig CollectablesConfig { get; }
+
         void LoadAll();
         ShopItemConfig GetShopItemConfig(ShopItemId hatTypeId);
         IEnumerable<ShopItemConfig> GetItemsConfigs();
