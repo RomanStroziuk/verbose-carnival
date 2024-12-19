@@ -10,8 +10,10 @@ namespace Code.Runtime.Infrastructure.GameStates.State
 {
     public class LevelState : IEnterableState, IExitableState
     {
-        private const float FadeDuration = 2f;
-        private const float MusicVolume = 0.1f;
+        private const float FadeDuration = 1f;
+        private const float MusicVolume = 0.3f;
+        private const SoundTypeId LevelMusic = SoundTypeId.GameplaySound;
+
 
         private readonly IInputService _inputService;
         private readonly IStaticDataService _staticDataService;
@@ -28,14 +30,8 @@ namespace Code.Runtime.Infrastructure.GameStates.State
         {
             _inputService.Enable();
 
-            /*if (AudioManager._instance != null)
-            {
-                AudioManager._instance.FadeOut(PreviousMusicName, FadeDuration);
-                AudioManager._instance.FadeIn(LevelMusicName, MusicVolume, FadeDuration);
-            }*/
-            
-            _soundService.FadeOut(SoundTypeId.MenuSound, FadeDuration);
-            _soundService.FadeIn(SoundTypeId.GameplaySound, MusicVolume, FadeDuration);
+            _soundService.FadeOutMusic(FadeDuration);
+            _soundService.FadeInMusic(LevelMusic, MusicVolume, FadeDuration);
             Debug.Log($"Start health of player in config is {_staticDataService.PlayerConfig.StartHealth} ");
         }
 

@@ -5,35 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="655959b3-fea3-48f3-ae70-b4ec4ca88c85" name="Changes" comment="kakashka ne fixitsa, sdelal kak mog">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Sounds.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Sounds/ISoundService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Sounds/ISoundService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Sounds/SoundService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Sounds/SoundService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/StaticData/SoundConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Runtime/StaticData/SoundConfig.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.verbose-carnival/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Editor/CollectablesSpawnerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Editor/CollectablesSpawnerEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Data/SongTypeId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Data/SoundTypeId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Data/SongTypeId.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Data/SoundTypeId.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Collectables/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Collectables/Coin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Collectables/CollectablesSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Collectables/CollectablesSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Collectables/HealthKit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Collectables/HealthKit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Death.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Death.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Movement/MoverY.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Movement/MoverY.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Sounds/AudioManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Sounds/AudioManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Sounds/Sound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Gameplay/Logic/Sounds/Sound.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/BootstrapState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/BootstrapState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/LevelState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/MenuState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/GameStates/State/MenuState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/ProjectInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/ProjectInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/IStaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/IStaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/StaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/StaticData/StaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Coin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Coin.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/CollectablesConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/CollectablesConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Random/IRandomService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Random/IRandomService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Random/RandomService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Runtime/Infrastructure/Services/Random/RandomService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +147,7 @@
       <workItem from="1734468875990" duration="6263000" />
       <workItem from="1734509655986" duration="18591000" />
       <workItem from="1734549872559" duration="11868000" />
-      <workItem from="1734593988495" duration="3348000" />
+      <workItem from="1734593988495" duration="7713000" />
     </task>
     <task id="LOCAL-00001" summary="Add coins view in main menu.">
       <option name="closed" value="true" />

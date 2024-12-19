@@ -11,8 +11,7 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
     {
         public HudConfig HUDConfig { get; set; }
         public PlayerConfig PlayerConfig { get; private set; }
-        public SoundConfig SoundConfig { get; private set; }
-
+        
         private Dictionary<string, LevelData> _levelsData;
         private Dictionary<ShopItemId, ShopItemConfig> _shopItems;
         private Dictionary<HatTypeId, HatConfig> _hats;

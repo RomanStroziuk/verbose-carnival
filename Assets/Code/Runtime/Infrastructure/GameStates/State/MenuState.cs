@@ -8,6 +8,9 @@ namespace Code.Runtime.Infrastructure.GameStates.State
     public sealed class MenuState : IEnterableState
     {
         private const string MenuSceneName = "Menu";
+        private const float FadeDuration = 1f;
+        private const float MusicVolume = 0.8f;
+        private const SoundTypeId LevelMusic = SoundTypeId.MenuSound;
 
         private readonly ISceneLoader _sceneLoader;
         private ISoundService _soundService;
@@ -22,7 +25,7 @@ namespace Code.Runtime.Infrastructure.GameStates.State
         {
             _sceneLoader.LoadScene(MenuSceneName);
             
-            _soundService.Play(SoundTypeId.MenuSound);
+            _soundService.FadeInMusic(LevelMusic, MusicVolume, FadeDuration);
         }
     }
 }

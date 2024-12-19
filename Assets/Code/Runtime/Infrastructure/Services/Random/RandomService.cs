@@ -22,5 +22,22 @@ namespace Code.Runtime.Infrastructure.Services.Random
             int index = UnityEngine.Random.Range(0, list.Count);
             return list[index];
         }
+        
+        public T ChooseWeighted<T>(List<(T Item, int Weight)> items)
+        {
+            if (items == null || items.Count == 0)
+                return default;
+            int totalWeight = 0;
+            foreach (var (_, weight) in items)
+                totalWeight += weight;
+            int randomPoint = UnityEngine.Random.Range(0, totalWeight);
+            foreach (var (item, weight) in items)
+            {   
+                if (randomPoint < weight)
+                    return item;
+                randomPoint -= weight;
+            }
+            return default;
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using Code.Runtime.Infrastructure.Services.Random;
 using Code.Runtime.StaticData;
 using UnityEngine;
@@ -9,7 +10,7 @@ namespace Code.Runtime.Gameplay.Logic.Collectables
     public class CollectablesSpawner : MonoBehaviour
     {
         [Header("Configuration")]
-        [SerializeField] private CollectablesConfig configuration; 
+        [SerializeField] private CollectablesConfig configuration;
 
         private IRandomService _randomService;
         private IInstantiator _instantiator;
@@ -27,11 +28,11 @@ namespace Code.Runtime.Gameplay.Logic.Collectables
         {
             while (true)
             {
-                yield return new WaitForSeconds(configuration.SpawnInterval); 
+                yield return new WaitForSeconds(configuration.SpawnInterval);
                 SpawnItem();
             }
         }
-        
+
         private void SpawnItem()
         {
             GameObject toSpawn = GetRandomItem();
@@ -46,21 +47,14 @@ namespace Code.Runtime.Gameplay.Logic.Collectables
             if (configuration.Items == null || configuration.Items.Count == 0)
                 return null;
 
-            int totalWeight = 0;
-            foreach (var item in configuration.Items)
-                totalWeight += item.Rarity;
-
-            int randomValue = _randomService.RangeInt(0, totalWeight);
-            int currentWeight = 0;
+            var weightedItems = new List<(GameObject, int)>();
 
             foreach (var item in configuration.Items)
             {
-                currentWeight += item.Rarity;
-                if (randomValue < currentWeight)
-                    return item.Prefab;
+                weightedItems.Add((item.Prefab, item.Rarity));
             }
 
-            return null;
+            return _randomService.ChooseWeighted(weightedItems);
         }
 
         private Vector3 GetRandomSpawnPosition()

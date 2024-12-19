@@ -1,6 +1,7 @@
 using Code.Runtime.Gameplay.Logic.Sounds;
 using Code.Runtime.Infrastructure.Services.Input;
 using Code.Runtime.Data;
+using Code.Runtime.Infrastructure.Services.Sounds;
 using UnityEngine;
 using Zenject;
 
@@ -17,11 +18,15 @@ namespace Code.Runtime.Gameplay.Logic
         [SerializeField] private Collider2D _collider;
 
         private IInputService _inputService;
+        private ISoundService _soundService;
+        
+        private const float FadeDuration = 2f;
 
         [Inject]
-        private void Construct(IInputService inputService)
+        private void Construct(IInputService inputService, ISoundService soundService)
         {
             _inputService = inputService;
+            _soundService = soundService;
         }
 
         private void OnValidate()
@@ -43,6 +48,7 @@ namespace Code.Runtime.Gameplay.Logic
 
             _rigidbody2D.AddForce(Vector2.up * _forceOnDeath, ForceMode2D.Impulse);
             _collider.enabled = false;
+            _soundService.FadeOutMusic(FadeDuration);
 
         }
     }

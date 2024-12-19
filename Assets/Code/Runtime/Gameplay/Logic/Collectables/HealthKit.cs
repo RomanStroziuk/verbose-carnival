@@ -13,6 +13,8 @@ namespace Code.Runtime.Gameplay.Logic.Collectables
 
         [SerializeField] private float _maxHealingAmount = 20f;
         
+        private const SoundTypeId Effect = SoundTypeId.HealthKitSound;
+        
         public bool IsCollected { get; private set; }
 
         private IRandomService _randomService;
@@ -31,7 +33,7 @@ namespace Code.Runtime.Gameplay.Logic.Collectables
 
             IsCollected = true;
             
-            _soundService.Play(SoundTypeId.HealthKitSound);
+            _soundService.PlayEffect(Effect);
 
             float healingAmount = _randomService.Range(_minHealingAmount, _maxHealingAmount);
 
