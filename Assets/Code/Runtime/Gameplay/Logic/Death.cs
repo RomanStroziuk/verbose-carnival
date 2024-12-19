@@ -1,5 +1,6 @@
 using Code.Runtime.Gameplay.Logic.Sounds;
 using Code.Runtime.Infrastructure.Services.Input;
+using Code.Runtime.Data;
 using UnityEngine;
 using Zenject;
 
@@ -11,17 +12,17 @@ namespace Code.Runtime.Gameplay.Logic
 
         [SerializeField] private Rigidbody2D _rigidbody2D;
 
-        [SerializeField] private float _forceonDeath;
+        [SerializeField] private float _forceOnDeath;
 
         [SerializeField] private Collider2D _collider;
 
         private IInputService _inputService;
 
-        private const string LevelMusicName = "ActiveGame";
-
         [Inject]
-        private void Construct(IInputService inputService) =>
+        private void Construct(IInputService inputService)
+        {
             _inputService = inputService;
+        }
 
         private void OnValidate()
         {
@@ -31,22 +32,18 @@ namespace Code.Runtime.Gameplay.Logic
         }
 
         private void Awake() =>
-            _health.Death += onDeath;
+            _health.Death += OnDeath;
 
         private void OnDestroy() =>
-            _health.Death -= onDeath;
+            _health.Death -= OnDeath;
 
-        private void onDeath()
+        private void OnDeath()
         {
             _inputService.Disable();
 
-            _rigidbody2D.AddForce(Vector2.up * _forceonDeath, ForceMode2D.Impulse);
+            _rigidbody2D.AddForce(Vector2.up * _forceOnDeath, ForceMode2D.Impulse);
             _collider.enabled = false;
 
-            if (AudioManager._instance != null)
-            {
-                AudioManager._instance.Stop(LevelMusicName);
-            }
         }
     }
 }

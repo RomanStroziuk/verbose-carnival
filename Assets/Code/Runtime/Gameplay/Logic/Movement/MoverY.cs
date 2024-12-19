@@ -1,5 +1,10 @@
+using Code.Runtime.Data;
 using Code.Runtime.Gameplay.Logic.Sounds;
+using Code.Runtime.Gameplay.Service.Wallet;
+using Code.Runtime.Infrastructure.Services.SaveLoad;
+using Code.Runtime.Infrastructure.Services.Sounds;
 using UnityEngine;
+using Zenject;
 
 namespace Code.Runtime.Gameplay.Logic.Movement
 {
@@ -15,7 +20,13 @@ namespace Code.Runtime.Gameplay.Logic.Movement
         private int _maxJumps = 0;
         private int _currentJumpType;
         private bool _isJumping;
-        private const string JumpMusic = "Jump";
+        private ISoundService _soundService;
+        
+        [Inject]
+        private void Construct(ISoundService soundService)
+        {
+            _soundService = soundService; 
+        }
         
         private void Update()
         {
@@ -51,10 +62,7 @@ namespace Code.Runtime.Gameplay.Logic.Movement
             _rigidBody.velocity = new Vector2(_rigidBody.velocity.x, 0);
             _rigidBody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
 
-            if (AudioManager._instance != null)
-            {
-                AudioManager._instance.Play(JumpMusic);
-            }
+            _soundService.Play(SoundTypeId.JumpSound);
         }
 
         private bool IsGrounded()

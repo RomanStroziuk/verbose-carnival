@@ -1,5 +1,7 @@
+using Code.Runtime.Data;
 using Code.Runtime.Gameplay.Logic.Sounds;
 using Code.Runtime.Infrastructure.Services.Random;
+using Code.Runtime.Infrastructure.Services.Sounds;
 using UnityEngine;
 using Zenject;
 
@@ -10,17 +12,17 @@ namespace Code.Runtime.Gameplay.Logic.Collectables
         [SerializeField] private float _minHealingAmount = 5f;
 
         [SerializeField] private float _maxHealingAmount = 20f;
-
-        private string _collectSoundName = "HealthPack";
-
+        
         public bool IsCollected { get; private set; }
 
         private IRandomService _randomService;
+        private ISoundService _soundService;
 
         [Inject]
-        private void Construct(IRandomService randomService)
+        private void Construct(IRandomService randomService, ISoundService soundService)
         {
             _randomService = randomService;
+            _soundService = soundService;
         }
 
         public void Collect(Collector collector)
@@ -28,6 +30,8 @@ namespace Code.Runtime.Gameplay.Logic.Collectables
             if (IsCollected) return;
 
             IsCollected = true;
+            
+            _soundService.Play(SoundTypeId.HealthKitSound);
 
             float healingAmount = _randomService.Range(_minHealingAmount, _maxHealingAmount);
 
@@ -35,11 +39,6 @@ namespace Code.Runtime.Gameplay.Logic.Collectables
             if (health != null)
             {
                 health.AddHealth(healingAmount);
-            }
-
-            if (AudioManager._instance != null)
-            {
-                AudioManager._instance.Play(_collectSoundName);
             }
 
             Destroy(gameObject);

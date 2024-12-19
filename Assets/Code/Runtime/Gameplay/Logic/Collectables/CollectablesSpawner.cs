@@ -50,7 +50,7 @@ namespace Code.Runtime.Gameplay.Logic.Collectables
             foreach (var item in configuration.Items)
                 totalWeight += item.Rarity;
 
-            int randomValue = (int)_randomService.Range(0, totalWeight);
+            int randomValue = _randomService.RangeInt(0, totalWeight);
             int currentWeight = 0;
 
             foreach (var item in configuration.Items)

@@ -1,6 +1,6 @@
 namespace Code.Runtime.Data
 {
-    public enum SongTypeId
+    public enum SoundTypeId
     {
         None = 0,
         CoinSound = 1,

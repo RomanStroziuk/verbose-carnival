@@ -23,5 +23,3 @@ MonoBehaviour:
     Rarity: 20
   - Prefab: {fileID: 1060732654390995167, guid: 4962b1402b5a8f44586f9dae18a6ed45, type: 3}
     Rarity: 67
-  - Prefab: {fileID: 0}
-    Rarity: 0

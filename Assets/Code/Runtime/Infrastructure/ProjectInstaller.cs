@@ -11,6 +11,7 @@ using Code.Runtime.Infrastructure.Services.Random;
 using Code.Runtime.Infrastructure.Services.SaveLoad;
 using Code.Runtime.Infrastructure.Services.Scene;
 using Code.Runtime.Infrastructure.Services.Shop;
+using Code.Runtime.Infrastructure.Services.Sounds;
 using Code.Runtime.Infrastructure.Services.StaticData;
 using Zenject;
 
@@ -54,11 +55,12 @@ namespace Code.Runtime.Infrastructure
         {
             Container.Bind<IRandomService>().To<RandomService>().AsSingle();
             Container.Bind<ISceneLoader>().To<SceneLoader>().AsSingle();
-            Container.Bind<IInputService>().To<Services.Input.InputService>().AsSingle();
+            Container.Bind<IInputService>().To<InputService>().AsSingle();
             Container.Bind<IStaticDataService>().To<StaticDataService>().AsSingle();
             Container.Bind<IProgressService>().To<ProgressService>().AsSingle();
             Container.Bind<ISaveLoadService>().To<SaveLoadService>().AsSingle();
             Container.Bind<ISaveLoadRegistryService>().To<SaveLoadRegistryService>().AsSingle();
+            Container.Bind<ISoundService>().To<SoundService>().AsSingle();
         }
 
         public void Initialize()

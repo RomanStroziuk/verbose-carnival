@@ -11,10 +11,13 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
     {
         public HudConfig HUDConfig { get; set; }
         public PlayerConfig PlayerConfig { get; private set; }
+        public SoundConfig SoundConfig { get; private set; }
+
         private Dictionary<string, LevelData> _levelsData;
         private Dictionary<ShopItemId, ShopItemConfig> _shopItems;
         private Dictionary<HatTypeId, HatConfig> _hats;
         private Dictionary<JumpTypeId, JumpConfig> _jumps;
+        private Dictionary<SoundTypeId, SoundConfig> _sounds;
 
         public void LoadAll()
         {
@@ -24,37 +27,49 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
             LoadShopItems();
             LoadHatConfigs();
             LoadJumpConfigs();
+            LoadSoundConfigs();
         }
 
         public HatConfig GetHatConfig(HatTypeId hatTypeId) =>
             _hats.GetValueOrDefault(hatTypeId);
+
         public JumpConfig GetJumpConfig(JumpTypeId jumpTypeId) =>
             _jumps.GetValueOrDefault(jumpTypeId);
 
         public ShopItemConfig GetShopItemConfig(ShopItemId hatTypeId) =>
             _shopItems.GetValueOrDefault(hatTypeId);
-        
+
+        public SoundConfig GetSoundsConfig(SoundTypeId soundTypeId) =>
+            _sounds.GetValueOrDefault(soundTypeId);
+
         public IEnumerable<ShopItemConfig> GetItemsConfigs() =>
             _shopItems.Values;
-    
+        
         public LevelData GetLevelData(string levelName) => _levelsData[levelName];
 
         private void LoadShopItems() =>
             _shopItems = Resources
                 .LoadAll<ShopItemConfig>(path: "Configs/ShopItems")
-                .ToDictionary(x => x.ShopItemId );
+                .ToDictionary(x => x.ShopItemId);
 
         private void LoadHatConfigs()
         {
-            _hats = Resources.LoadAll<HatConfig>("Configs/Hats").ToDictionary(x=>x.HatTypeId);
+            _hats = Resources.LoadAll<HatConfig>("Configs/Hats").ToDictionary(x => x.HatTypeId);
         }
+
         private void LoadJumpConfigs()
         {
-            _jumps = Resources.LoadAll<JumpConfig>("Configs/Jumps").ToDictionary(x=>x.JumpTypeId);
+            _jumps = Resources.LoadAll<JumpConfig>("Configs/Jumps").ToDictionary(x => x.JumpTypeId);
         }
+
         private void LoadLevels()
         {
             _levelsData = Resources.LoadAll<LevelData>("Configs/Levels").ToDictionary(level => level.LevelName);
+        }
+
+        private void LoadSoundConfigs()
+        {
+            _sounds = Resources.LoadAll<SoundConfig>("Configs/Sounds").ToDictionary(x => x.SoundTypeId);
         }
 
         private PlayerConfig LoadPlayerConfig() =>
@@ -64,5 +79,6 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
         {
             HUDConfig = Resources.Load<HudConfig>("Configs/HudConfig");
         }
+        
     }
 }

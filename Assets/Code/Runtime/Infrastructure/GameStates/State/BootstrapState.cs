@@ -5,6 +5,7 @@ using Code.Runtime.Infrastructure.SaveLoadRegistry;
 using Code.Runtime.Infrastructure.Services.PlayerInventory;
 using Code.Runtime.Infrastructure.Services.Scene;
 using Code.Runtime.Infrastructure.Services.Shop;
+using Code.Runtime.Infrastructure.Services.Sounds;
 using Code.Runtime.Infrastructure.Services.StaticData;
 
 namespace Code.Runtime.Infrastructure.GameStates.State
@@ -20,11 +21,12 @@ namespace Code.Runtime.Infrastructure.GameStates.State
         private readonly ISaveLoadRegistryService _saveLoadRegistryService;
         private readonly IShopService _shopService;
         private readonly IPlayerInventoryService _playerInventoryService;
-        
+        private readonly ISoundService _soundService;
+
         public BootstrapState(IGameStateMachine stateMachine, ISceneLoader sceneLoader,
             IStaticDataService staticDataService,
             IWalletService walletService, ISaveLoadRegistryService saveLoadRegistryService, IShopService shopService,
-            IPlayerInventoryService playerInventoryService)
+            ISoundService soundService, IPlayerInventoryService playerInventoryService)
         {
             _stateMachine = stateMachine;
             _sceneLoader = sceneLoader;
@@ -33,12 +35,14 @@ namespace Code.Runtime.Infrastructure.GameStates.State
             _saveLoadRegistryService = saveLoadRegistryService;
             _shopService = shopService;
             _playerInventoryService = playerInventoryService;
+            _soundService = soundService;
         }
 
         public void Enter()
         {
             _sceneLoader.LoadScene(BootstrapSceneName);
             _staticDataService.LoadAll();
+            _soundService.Initialize();
 
             RegisterProgressReadersWriters();
 
