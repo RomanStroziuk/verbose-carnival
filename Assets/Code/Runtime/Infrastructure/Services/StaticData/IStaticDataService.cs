@@ -13,6 +13,8 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
         HudConfig HUDConfig { get; }
 
         CollectablesConfig CollectablesConfig { get; }
+        
+        WindowConfig WindowConfig { get; }
 
         void LoadAll();
         ShopItemConfig GetShopItemConfig(ShopItemId hatTypeId);
