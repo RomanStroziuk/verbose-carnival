@@ -4,6 +4,7 @@ using Code.Runtime.Infrastructure.GameStates.Provider;
 using Code.Runtime.Infrastructure.GameStates.State;
 using Code.Runtime.Infrastructure.GameStates.StateMachine;
 using Code.Runtime.Infrastructure.SaveLoadRegistry;
+using Code.Runtime.Infrastructure.Services.CleaningService;
 using Code.Runtime.Infrastructure.Services.Input;
 using Code.Runtime.Infrastructure.Services.PlayerInventory;
 using Code.Runtime.Infrastructure.Services.Progress;
@@ -13,6 +14,9 @@ using Code.Runtime.Infrastructure.Services.Scene;
 using Code.Runtime.Infrastructure.Services.Shop;
 using Code.Runtime.Infrastructure.Services.Sounds;
 using Code.Runtime.Infrastructure.Services.StaticData;
+using Code.Runtime.Infrastructure.Services.TimeService;
+using Code.Runtime.Infrastructure.Services.WindowButtonsService;
+using Code.Runtime.Infrastructure.WindowsService;
 using Zenject;
 
 namespace Code.Runtime.Infrastructure
@@ -61,6 +65,10 @@ namespace Code.Runtime.Infrastructure
             Container.Bind<ISaveLoadService>().To<SaveLoadService>().AsSingle();
             Container.Bind<ISaveLoadRegistryService>().To<SaveLoadRegistryService>().AsSingle();
             Container.Bind<ISoundService>().To<SoundService>().AsSingle();
+            Container.Bind<ICleaningService>().To<CleaningService>().AsSingle();
+            Container.Bind<ITimeService>().To<TimeService>().AsSingle();
+            Container.Bind<IWindowService>().To<WindowService>().AsSingle();
+            Container.Bind<IWindowButtonsService>().To<WindowButtonsService>().AsSingle();
         }
 
         public void Initialize()

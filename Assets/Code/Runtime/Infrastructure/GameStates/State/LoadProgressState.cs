@@ -15,15 +15,16 @@ namespace Code.Runtime.Infrastructure.GameStates.State
         private readonly IGameStateMachine _stateMachine;
         private readonly ISaveLoadRegistryService _saveLoadRegistryService;
 
-        public LoadProgressState(IProgressService progressService, ISaveLoadService saveLoadService, IGameStateMachine stateMachine, ISaveLoadRegistryService saveLoadRegistryService)
+        public LoadProgressState(IProgressService progressService, ISaveLoadService saveLoadService,
+            IGameStateMachine stateMachine, ISaveLoadRegistryService saveLoadRegistryService)
         {
             _progressService = progressService;
             _saveLoadService = saveLoadService;
             _stateMachine = stateMachine;
             _saveLoadRegistryService = saveLoadRegistryService;
         }
-        
-            public void Enter()
+
+        public void Enter()
         {
             PlayerProgress playerProgress = _saveLoadService.LoadProgress() ?? new PlayerProgress();
             _progressService.PlayerProgress = playerProgress;
@@ -32,7 +33,7 @@ namespace Code.Runtime.Infrastructure.GameStates.State
             {
                 progressReader.Read(playerProgress);
             }
-            
+
             _stateMachine.Enter<MenuState>();
         }
     }

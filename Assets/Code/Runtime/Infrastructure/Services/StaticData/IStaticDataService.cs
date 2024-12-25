@@ -20,5 +20,6 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
         SoundConfig GetSoundsConfig(SoundTypeId soundTypeId);
         HatConfig GetHatConfig(HatTypeId hatTypeId);
         JumpConfig GetJumpConfig(JumpTypeId jumpTypeId);
+        WindowConfig GetWindowConfig(WindowTypeId windowTypeId);
     }
 }

@@ -12,12 +12,15 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
         public HudConfig HUDConfig { get; set; }
         public PlayerConfig PlayerConfig { get; private set; }
         
+        public WindowConfig WindowConfig { get; private set; }
+        
         private CollectablesConfig _collectablesConfig;
         private Dictionary<string, LevelData> _levelsData;
         private Dictionary<ShopItemId, ShopItemConfig> _shopItems;
         private Dictionary<HatTypeId, HatConfig> _hats;
         private Dictionary<JumpTypeId, JumpConfig> _jumps;
         private Dictionary<SoundTypeId, SoundConfig> _sounds;
+        private Dictionary<WindowTypeId, WindowConfig> _windows;
 
         public void LoadAll()
         {
@@ -29,6 +32,7 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
             LoadJumpConfigs();
             LoadSoundConfigs();
             LoadCollectablesConfig();
+            LoadWindows();
         }
 
         public CollectablesConfig CollectablesConfig => _collectablesConfig; 
@@ -49,6 +53,9 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
             _shopItems.Values;
         
         public LevelData GetLevelData(string levelName) => _levelsData[levelName];
+        
+        public WindowConfig GetWindowConfig(WindowTypeId windowTypeId) => 
+            _windows.GetValueOrDefault(windowTypeId);
 
         private void LoadCollectablesConfig()
         {
@@ -86,6 +93,11 @@ namespace Code.Runtime.Infrastructure.Services.StaticData
         private void LoadHudConfig()
         {
             HUDConfig = Resources.Load<HudConfig>("Configs/HudConfig");
+        }
+        
+        private void LoadWindows()
+        {
+            _windows = Resources.LoadAll<WindowConfig>("Configs/Windows").ToDictionary(x => x.WindowTypeId);
         }
     }
 }
